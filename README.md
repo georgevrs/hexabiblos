@@ -1,0 +1,1 @@
+This is a project to build a web application that allows users to create and manage their own inventory of items.
