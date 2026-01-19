@@ -117,10 +117,12 @@ Icon
 # logs/
 # *.log
 
-# Environment variables (if any)
+# Environment variables
 .env
 .env.local
 .env.*.local
+# Keep .env.example as a template
+!.env.example
 
 # Backup files
 *.bak

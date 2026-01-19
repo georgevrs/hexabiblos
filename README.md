@@ -1,26 +1,39 @@
-# Hexabiblos Enterprise Chatbot UI - Stage 1
+# Hexabiblos Enterprise Chatbot UI - Stage 2
 
-A polished, professional chatbot web application built with Jakarta EE (JSF + PrimeFaces) for enterprise environments. This is Stage 1: a fully functional UI with client-side simulated chat logic, requiring no backend services, databases, or API keys.
+A polished, professional chatbot web application built with Jakarta EE (JSF + PrimeFaces) for enterprise environments. 
+
+**Stage 1 (COMPLETE)**: Fully functional UI with client-side simulated chat logic.
+
+**Stage 2 (CURRENT)**: Server-side chat state management with Google Gemini AI integration using the official Java SDK.
 
 ## Project Overview
 
 **Technology Stack:**
 - Jakarta Faces (JSF) 4.0.1
-- PrimeFaces 12.0.0
+- PrimeFaces 13.0.0 (Jakarta variant)
+- Google Gemini AI SDK 1.0.0
 - Maven 3.x
 - Java 17
 - WildFly 27.x (preferred) or Tomcat 10.x
 
-**Stage 1 Features:**
+**Stage 1 Features (COMPLETE):**
 - ✅ Enterprise-grade responsive UI
 - ✅ Real-time message display with user/bot styling
-- ✅ Typing indicator simulation (600-1200ms delay)
-- ✅ Quick reply chips (Help, Show Features, Reset)
+- ✅ Typing indicator simulation
+- ✅ Quick reply chips
 - ✅ Enter key to send (Shift+Enter for newline)
 - ✅ Auto-scroll to latest message
 - ✅ Clear chat functionality
-- ✅ Keyword-based canned responses
-- ✅ No backend dependencies (pure client-side simulation)
+- ✅ Client-side simulated responses
+
+**Stage 2 Features (CURRENT):**
+- ✅ Server-side chat state management (JSF session-scoped bean)
+- ✅ Google Gemini AI integration via official Java SDK
+- ✅ PrimeFaces AJAX for seamless UI updates
+- ✅ Conversation history management
+- ✅ Demo mode fallback (when API key not configured)
+- ✅ Input validation (max 2000 characters)
+- ✅ Error handling and timeout protection
 
 ## Prerequisites for Windows (Fresh Installation)
 
@@ -92,12 +105,39 @@ No separate installation needed! The project includes `cargo-maven-plugin` for e
 
 ## Building the Project
 
+### Quick Start (Recommended)
+
+Use the provided scripts to automatically set up Java environment and run the application:
+
+**PowerShell:**
+```powershell
+.\run.ps1
+```
+
+**Command Prompt:**
+```cmd
+run.bat
+```
+
+These scripts will:
+- Automatically set JAVA_HOME to the correct JDK
+- Verify Java and Maven are accessible
+- Check for .env file
+- Build and deploy the application
+
+### Manual Build
+
 1. **Open PowerShell or Command Prompt**
-2. **Navigate to project directory:**
+2. **Set Java environment** (if not already set):
+   ```powershell
+   $env:JAVA_HOME="C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot"
+   $env:PATH="$env:JAVA_HOME\bin;$env:PATH"
+   ```
+3. **Navigate to project directory:**
    ```powershell
    cd C:\Users\georg\Desktop\Interviews\Hexabiblos
    ```
-3. **Build the WAR file:**
+4. **Build the WAR file:**
    ```powershell
    mvn clean package
    ```
@@ -106,9 +146,147 @@ No separate installation needed! The project includes `cargo-maven-plugin` for e
    - Compile Java code (if any)
    - Package the WAR file to `target/chatbot-ui.war`
 
+## Prerequisites Check
+
+Before building, ensure:
+1. **Java 17 JDK** is installed (not JRE)
+2. **Maven** is installed and in PATH
+3. **WildFly 27** is installed at `C:\wildfly` (or update path in `pom.xml`)
+
+**Quick verification:**
+```powershell
+java -version        # Should show Java 17
+mvn -version         # Should show Maven version AND Java 17
+```
+
+**Important**: If `mvn -version` shows Java 8, set JAVA_HOME:
+```powershell
+$env:JAVA_HOME="C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot"
+$env:PATH="$env:JAVA_HOME\bin;$env:PATH"
+mvn -version  # Verify it now shows Java 17
+```
+
+## Stage 2: Gemini API Configuration
+
+### Setting the Gemini API Key
+
+The application requires a Google Gemini API key to generate AI responses. You can get one from: https://aistudio.google.com/apikey
+
+**Option 1: .env File (Easiest for Development - Recommended)**
+
+1. Copy the example file:
+   ```powershell
+   Copy-Item .env.example .env
+   ```
+
+2. Edit `.env` and add your API key (make sure there are NO spaces around the `=`):
+   ```
+   GEMINI_API_KEY=your-actual-api-key-here
+   ```
+   **Important**: No quotes, no spaces. Just: `GEMINI_API_KEY=your-key-here`
+
+3. The application will automatically read from `.env` file when it starts.
+
+**Note**: When running in WildFly, the `.env` file must be in the project root directory (where `pom.xml` is). The application searches multiple locations, but the project root is checked first.
+
+**If .env file doesn't work in WildFly** (most reliable):
+1. Copy `.env` to WildFly directory:
+   ```powershell
+   Copy-Item .env C:\wildfly\.env
+   ```
+2. Or use environment variables (see Option 3 below) - this is more reliable for WildFly
+
+**Troubleshooting .env file**:
+- Check WildFly console logs for "✓ Loaded .env file from: ..." or "✗ No API key found" messages
+- If you see "No .env file found", try copying it to `C:\wildfly\.env`
+- Verify the file format: `GEMINI_API_KEY=your-key-here` (no quotes, no spaces around `=`)
+- Verify the file has no BOM (Byte Order Mark) - save as UTF-8 without BOM
+- Make sure there are no trailing spaces in the API key value
+- Check WildFly console for debug messages showing API key length
+
+**Note**: The `.env` file is gitignored for security. Never commit your actual API key!
+
+**Option 3: Environment Variable**
+
+Set the `GEMINI_API_KEY` environment variable before starting WildFly:
+
+**Windows PowerShell:**
+```powershell
+$env:GEMINI_API_KEY="your-api-key-here"
+mvn clean package cargo:run
+```
+
+**Windows Command Prompt:**
+```cmd
+set GEMINI_API_KEY=your-api-key-here
+mvn clean package cargo:run
+```
+
+**Permanent (System-wide):**
+1. Open **System Properties** → **Advanced** → **Environment Variables**
+2. Under **System Variables**, click **New**
+3. Variable name: `GEMINI_API_KEY`
+4. Variable value: `your-api-key-here`
+5. Click **OK** on all dialogs
+6. Restart WildFly/Maven
+
+**Option 4: WildFly Configuration**
+
+You can also set environment variables in WildFly's `standalone.conf.bat`:
+```batch
+set "GEMINI_API_KEY=your-api-key-here"
+```
+
+**Important**: When editing `standalone.conf.bat`, also ensure it uses Java 17:
+```batch
+set "JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot"
+set "JAVA=%JAVA_HOME%\bin\java"
+```
+This ensures WildFly (and Cargo) use Java 17 instead of any hardcoded Java 8 path.
+
+### Optional Configuration
+
+- **GEMINI_MODEL**: Model to use (default: `gemini-3-flash-preview`)
+  ```powershell
+  $env:GEMINI_MODEL="gemini-2.5-flash"
+  ```
+
+- **GEMINI_MAX_TURNS**: Maximum conversation turns to include in context (default: `20`)
+  ```powershell
+  $env:GEMINI_MAX_TURNS="15"
+  ```
+
+### Configuration Priority
+
+The application checks for API key in this order:
+1. `.env` file (in project root)
+2. `GEMINI_API_KEY` environment variable
+3. `GOOGLE_API_KEY` environment variable (SDK default)
+
+### Demo Mode
+
+If `GEMINI_API_KEY` is not set in any of the above locations, the application runs in **Demo Mode**:
+- Shows a demo mode indicator in the UI
+- Returns a deterministic message: "Gemini API key not configured. Running in demo mode."
+- All other features work normally (UI, chat state, etc.)
+
 ## Running the Application
 
-### Method 1: Embedded WildFly (Easiest - Recommended for Stage 1)
+### Method 1: Using the Run Script (Easiest - Recommended)
+
+**PowerShell:**
+```powershell
+.\run.ps1
+```
+
+**Command Prompt:**
+```cmd
+run.bat
+```
+
+The script automatically handles Java environment setup and runs the build + deployment.
+
+### Method 2: Embedded WildFly (Manual)
 
 ```powershell
 mvn clean package cargo:run
@@ -122,7 +300,7 @@ This will:
 
 **To stop:** Press `Ctrl+C` in the terminal
 
-### Method 2: Manual WildFly Deployment
+### Method 3: Manual WildFly Deployment
 
 1. **Start WildFly** (if not already running):
    ```powershell
@@ -142,7 +320,7 @@ This will:
    - Delete `chatbot-ui.war` from the deployments folder, or
    - Create `chatbot-ui.war.dodeploy` file (empty) to trigger undeployment
 
-### Method 3: Using Tomcat 10.x (Alternative)
+### Method 4: Using Tomcat 10.x (Alternative)
 
 If you prefer Tomcat:
 
@@ -230,6 +408,53 @@ Use this checklist to manually verify all UI features:
 - [ ] **Focus States**: Textarea shows focus border
 - [ ] **Scrollbar**: Message area has styled scrollbar
 
+## Stage 2: Manual Testing Checklist
+
+Use this checklist to verify Stage 2 functionality:
+
+### ✅ Basic Functionality
+
+- [ ] **Demo Mode**: Run without `GEMINI_API_KEY` - should show demo mode indicator and demo message
+- [ ] **API Mode**: Run with `GEMINI_API_KEY` - should receive real Gemini responses
+- [ ] **Welcome Message**: Initial assistant welcome message appears on page load
+- [ ] **Session Persistence**: Refresh page - conversation history should persist (session-scoped)
+
+### ✅ Message Sending
+
+- [ ] **Send Button**: Type message, click "Send" - message appears, AI response follows
+- [ ] **Enter Key**: Type message, press Enter - message sends (Shift+Enter adds newline)
+- [ ] **Empty Message**: Try sending empty message - should be ignored
+- [ ] **Long Message**: Type message > 2000 chars - should show error message
+- [ ] **Loading State**: Input field and send button disabled while loading
+
+### ✅ AI Integration
+
+- [ ] **Real Response**: With API key, receive actual Gemini-generated response
+- [ ] **Conversation Context**: Send follow-up message - AI should remember previous context
+- [ ] **Error Handling**: Temporarily disconnect network - should show error message, not crash
+- [ ] **Timeout Protection**: Long-running requests should timeout gracefully
+
+### ✅ Quick Replies
+
+- [ ] **Help**: Click "Help" - sends "Help" message and gets AI response
+- [ ] **Show Features**: Click "Show Features" - sends message and gets response
+- [ ] **Reset**: Click "Reset" - clears conversation, shows new welcome message
+
+### ✅ UI Behavior
+
+- [ ] **Typing Indicator**: Shows while waiting for AI response
+- [ ] **Auto-scroll**: Automatically scrolls to latest message after response
+- [ ] **Message Styling**: User messages (right/blue), Assistant messages (left/gray)
+- [ ] **Timestamps**: Each message shows timestamp
+- [ ] **HTML Escaping**: Special characters in messages are properly escaped
+
+### ✅ Error Scenarios
+
+- [ ] **Missing API Key**: App runs in demo mode without errors
+- [ ] **Invalid API Key**: Should handle gracefully (may show error or fallback)
+- [ ] **Network Error**: Should show user-friendly error message
+- [ ] **UI Doesn't Freeze**: Errors don't prevent further interactions
+
 ## Optional: Automated UI Testing
 
 For Stage 1, manual testing is sufficient. However, if you want to add automated tests later, consider:
@@ -264,6 +489,29 @@ npm install -g cypress
 
 ## Troubleshooting
 
+### Issue: `No compiler is provided in this environment` or Maven runs on Java 8
+**Solution**: 
+- **Root cause**: Maven is using Java 8 instead of Java 17
+- **Fix 1 (Recommended)**: Use `run.ps1` or `run.bat` which sets JAVA_HOME automatically
+- **Fix 2 (Manual)**: Set JAVA_HOME before running Maven:
+  ```powershell
+  $env:JAVA_HOME="C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot"
+  $env:PATH="$env:JAVA_HOME\bin;$env:PATH"
+  mvn -version  # Should show Java 17
+  ```
+- **Verify**: `mvn -version` should show Java 17, not Java 8
+- **Note**: Even if `java -version` shows 17, Maven might still use Java 8 if JAVA_HOME isn't set
+
+### Issue: WildFly requires Java 11+ but runs on Java 8
+**Solution**:
+- **Root cause**: WildFly's `standalone.conf.bat` is hardcoded to Java 8
+- **Fix**: Edit `C:\wildfly\bin\standalone.conf.bat`:
+  1. Find the line: `set "JAVA=...jre-1.8...\bin\java"` (or similar)
+  2. Replace with: `set "JAVA=%JAVA_HOME%\bin\java"`
+  3. Ensure `JAVA_HOME` is set above it: `set "JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot"`
+- **Verify**: Start WildFly manually - console should show Java 17, not Java 8
+- **Note**: This affects both manual WildFly startup and Cargo (since Cargo calls WildFly scripts)
+
 ### Issue: `java: command not found`
 **Solution**: Verify JAVA_HOME and PATH are set correctly. Restart PowerShell after setting environment variables.
 
@@ -294,6 +542,16 @@ npm install -g cypress
 - Verify file paths in `chat.xhtml` match actual file locations
 - Check browser Network tab for 404 errors
 - Clear browser cache
+
+### Issue: `mvn clean` fails - "Cannot delete target\cargo\..." (locked files)
+**Solution**:
+- **Root cause**: WildFly/Cargo process is still running and holding files
+- **Steps**:
+  1. Stop the running container: Press `Ctrl+C` in the terminal running `cargo:run`
+  2. Wait a few seconds for processes to terminate
+  3. Manually delete `target` folder: `Remove-Item -Recurse -Force target`
+  4. Run build again: `mvn clean package cargo:run`
+- **Alternative**: Close all terminals and restart
 
 ### Issue: Maven build warnings about pom.xml
 **Solution**:
@@ -340,11 +598,11 @@ npm install -g cypress
 
 ## Next Steps (Future Stages)
 
-- **Stage 2**: Add backend REST API with Jakarta REST
-- **Stage 3**: Integrate Gemini API for real LLM responses
-- **Stage 4**: Add database persistence (JPA/EJB)
-- **Stage 5**: Add authentication and user management
-- **Stage 6**: Add conversation history and context management
+- **Stage 3**: Add database persistence (JPA/EJB) for conversation history
+- **Stage 4**: Add authentication and user management
+- **Stage 5**: Add REST API endpoints for external integrations
+- **Stage 6**: Add streaming responses (SSE) for real-time AI output
+- **Stage 7**: Add conversation export/import functionality
 
 ## License
 

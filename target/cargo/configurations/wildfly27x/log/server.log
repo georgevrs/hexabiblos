@@ -946,35 +946,1610 @@
 2026-01-19 20:51:12,930 INFO  [org.jboss.remoting] (CLI command executor) JBoss Remoting version 5.0.26.Final
 2026-01-19 20:51:12,937 INFO  [org.jboss.threads] (CLI command executor) JBoss Threads version 2.4.0.Final
 2026-01-19 20:51:12,967 INFO  [org.wildfly.security] (CLI command executor) ELY00001: WildFly Elytron version 2.0.0.Final
-2026-01-19 20:54:59,735 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\deployments
-2026-01-19 20:54:59,901 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
-2026-01-19 20:54:59,916 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBossWS 6.1.0.Final (Apache CXF 3.5.2.jbossorg-3) 
-2026-01-19 20:55:00,075 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
-2026-01-19 20:55:01,050 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment chatbot-ui.war
-2026-01-19 20:55:01,287 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-1) HV000001: Hibernate Validator 8.0.0.Final
-2026-01-19 20:55:01,729 WARN  [org.wildfly.extension.microprofile.opentracing] (MSC service thread 1-1) WFLYTRACEXT0012: No Jaeger endpoint or sender-binding configured. Installing a no-op sender
-2026-01-19 20:55:01,740 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-1) No shutdown hook registered: Please call close() manually on application shutdown.
-2026-01-19 20:55:01,743 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-1) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=chatbot-ui.war, reporter=RemoteReporter(sender=NoopSender(), closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=MonkeyToaster, jaeger.version=Java-1.6.0, ip=192.168.1.12}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
-2026-01-19 20:55:01,982 INFO  [org.jboss.weld.Version] (MSC service thread 1-7) WELD-000900: 5.1.0 (Final)
-2026-01-19 20:55:02,918 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 95) Initializing Mojarra 4.0.0.SP01 for context '/chatbot-ui'
-2026-01-19 20:55:04,061 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 95) Monitoring file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/tmp/vfs/temp/temp739da7a5941cb16c/content-3c3eb35fb17c16a9/WEB-INF/faces-config.xml for modifications
-2026-01-19 20:55:04,173 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 95) Running on PrimeFaces 13.0.0
-2026-01-19 20:55:04,218 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 95) WFLYUT0021: Registered web context: '/chatbot-ui' for server 'default-server'
-2026-01-19 20:55:04,263 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 46) WFLYSRV0010: Deployed "chatbot-ui.war" (runtime-name : "chatbot-ui.war")
-2026-01-19 20:55:04,318 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
-2026-01-19 20:55:04,323 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) started in 7992ms - Started 463 of 713 services (361 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
-2026-01-19 20:55:04,326 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
-2026-01-19 20:55:04,326 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
-2026-01-19 20:55:10,270 INFO  [org.primefaces.util.AjaxRequestBuilder] (default task-1) Component 'j_idt14' should be inside a form or should reference a form via its form attribute. We will try to find a fallback form on the client side.
-2026-01-19 20:55:10,270 INFO  [org.primefaces.util.AjaxRequestBuilder] (default task-2) Component 'j_idt14' should be inside a form or should reference a form via its form attribute. We will try to find a fallback form on the client side.
-2026-01-19 20:55:10,273 INFO  [org.primefaces.util.AjaxRequestBuilder] (default task-2) Component 'j_idt16' should be inside a form or should reference a form via its form attribute. We will try to find a fallback form on the client side.
-2026-01-19 20:55:10,273 INFO  [org.primefaces.util.AjaxRequestBuilder] (default task-1) Component 'j_idt16' should be inside a form or should reference a form via its form attribute. We will try to find a fallback form on the client side.
-2026-01-19 20:55:10,273 INFO  [org.primefaces.util.AjaxRequestBuilder] (default task-2) Component 'j_idt17' should be inside a form or should reference a form via its form attribute. We will try to find a fallback form on the client side.
-2026-01-19 20:55:10,273 INFO  [org.primefaces.util.AjaxRequestBuilder] (default task-1) Component 'j_idt17' should be inside a form or should reference a form via its form attribute. We will try to find a fallback form on the client side.
-2026-01-19 20:55:10,280 INFO  [org.primefaces.util.AjaxRequestBuilder] (default task-1) Component 'j_idt20' should be inside a form or should reference a form via its form attribute. We will try to find a fallback form on the client side.
-2026-01-19 20:55:10,280 INFO  [org.primefaces.util.AjaxRequestBuilder] (default task-2) Component 'j_idt20' should be inside a form or should reference a form via its form attribute. We will try to find a fallback form on the client side.
-2026-01-19 20:55:31,108 SEVERE [jakarta.faces.component] (default task-1) the component(jakarta.faces.component.html.HtmlDoctype@20b9cbf3) is the head component of the stack, but it's _isPushedAsCurrentRefCount < 1
-2026-01-19 20:55:31,113 INFO  [org.primefaces.util.AjaxRequestBuilder] (default task-1) Component 'j_idt14' should be inside a form or should reference a form via its form attribute. We will try to find a fallback form on the client side.
-2026-01-19 20:55:31,114 INFO  [org.primefaces.util.AjaxRequestBuilder] (default task-1) Component 'j_idt16' should be inside a form or should reference a form via its form attribute. We will try to find a fallback form on the client side.
-2026-01-19 20:55:31,114 INFO  [org.primefaces.util.AjaxRequestBuilder] (default task-1) Component 'j_idt17' should be inside a form or should reference a form via its form attribute. We will try to find a fallback form on the client side.
-2026-01-19 20:55:31,115 INFO  [org.primefaces.util.AjaxRequestBuilder] (default task-1) Component 'j_idt20' should be inside a form or should reference a form via its form attribute. We will try to find a fallback form on the client side.
+2026-01-19 20:54:52,822 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 20:54:53,703 INFO  [org.jboss.modules] (CLI command executor) JBoss Modules version 2.0.3.Final
+2026-01-19 20:54:53,763 INFO  [org.jboss.msc] (CLI command executor) JBoss MSC version 1.4.13.Final
+2026-01-19 20:54:53,770 INFO  [org.jboss.threads] (CLI command executor) JBoss Threads version 2.4.0.Final
+2026-01-19 20:54:53,870 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) starting
+2026-01-19 20:54:53,872 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	file.encoding = Cp1252
+	file.separator = \
+	java.class.path = C:\wildfly\jboss-modules.jar
+	java.class.version = 61.0
+	java.home = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot
+	java.io.tmpdir = C:\Users\georg\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\PowerShell\7;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;$env:USERPROFILE\.bun\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\HP\HP One Agent;C:\Program Files\PowerShell\7\;C:\Users\georg\.local\bin;C:\Users\georg\.bun\bin;$env:USERPROFILE\.bun\bin;C:\Users\georg\Desktop\WFF_Universe\WWF_upload\.venv\Scripts;C:\Program Files\PowerShell\7;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Python312\Scripts\;C:\Python312\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\HP\HP One Agent;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\nodejs\;C:\Strawberry\c\bin;C:\Strawberry;C:\Users\georg\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\georg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\georg\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\tectonic;C:\Program Files\GitHub CLI;C:\stripe;C:\Program Files\Apache\maven\bin;;.
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.17+10
+	java.specification.maintenance.version = 1
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Eclipse Adoptium
+	java.vendor.url = https://adoptium.net/
+	java.vendor.url.bug = https://github.com/adoptium/adoptium-support/issues
+	java.vendor.version = Temurin-17.0.17+10
+	java.version = 17.0.17
+	java.version.date = 2025-10-21
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Eclipse Adoptium
+	java.vm.version = 17.0.17+10
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = C:\wildfly
+	jboss.host.name = monkeytoaster
+	jboss.modules.dir = C:\wildfly\modules
+	jboss.node.name = monkeytoaster
+	jboss.qualified.host.name = monkeytoaster
+	jboss.server.base.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	jboss.server.config.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration
+	jboss.server.content.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.data.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data
+	jboss.server.deploy.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.log.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log
+	jboss.server.name = monkeytoaster
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties
+	module.path = C:\wildfly\modules
+	native.encoding = Cp1252
+	org.jboss.boot.log.file = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log\server.log
+	org.jboss.resolver.warning = true
+	org.wildfly.logging.embedded = false
+	os.arch = amd64
+	os.name = Windows 11
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly\jboss-modules.jar -mp C:\wildfly\modules org.jboss.as.cli --file=C:\Users\georg\AppData\Local\Temp\cargo-wildfly-6449325220249571709.cli
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = GB
+	user.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	user.home = C:\Users\georg
+	user.language = en
+	user.name = georg
+	user.script = 
+	user.timezone = Europe/Athens
+	user.variant = 
+2026-01-19 20:54:53,874 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dorg.jboss.boot.log.file=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log -Dlogging.configuration=file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties -Djboss.home.dir=C:\wildfly -Djboss.server.base.dir=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x -Djboss.bind.address=0.0.0.0 
+2026-01-19 20:54:54,701 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 20:54:55,016 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 4) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 20:54:55,016 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 4) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 20:54:55,447 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'cluster' in the resource at address '/subsystem=ejb3/service=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2026-01-19 20:54:55,629 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-7) WFLYELY00023: KeyStore file 'C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore' does not exist. Used blank.
+2026-01-19 20:54:55,637 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY01084: KeyStore C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2026-01-19 20:54:55,665 INFO  [org.jboss.as.patching] (MSC service thread 1-7) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2026-01-19 20:54:55,840 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2026-01-19 20:54:55,844 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) started in 2140ms - Started 50 of 73 services (24 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
+2026-01-19 20:54:56,052 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 20:54:56,073 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 20:54:56,090 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 20:54:56,107 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 20:54:56,126 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 20:54:56,141 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 20:54:56,157 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 20:54:56,173 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0050: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) stopped in 13ms
+2026-01-19 20:54:56,176 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 20:54:56,571 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 20:54:57,011 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2026-01-19 20:54:57,017 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2026-01-19 20:54:57,080 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) starting
+2026-01-19 20:54:57,080 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = Cp1252
+	file.separator = \
+	java.class.path = C:\wildfly\jboss-modules.jar
+	java.class.version = 61.0
+	java.home = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot
+	java.io.tmpdir = C:\Users\georg\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\PowerShell\7;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;$env:USERPROFILE\.bun\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\HP\HP One Agent;C:\Program Files\PowerShell\7\;C:\Users\georg\.local\bin;C:\Users\georg\.bun\bin;$env:USERPROFILE\.bun\bin;C:\Users\georg\Desktop\WFF_Universe\WWF_upload\.venv\Scripts;C:\Program Files\PowerShell\7;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Python312\Scripts\;C:\Python312\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\HP\HP One Agent;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\nodejs\;C:\Strawberry\c\bin;C:\Strawberry;C:\Users\georg\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\georg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\georg\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\tectonic;C:\Program Files\GitHub CLI;C:\stripe;C:\Program Files\Apache\maven\bin;;.
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.17+10
+	java.specification.maintenance.version = 1
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Eclipse Adoptium
+	java.vendor.url = https://adoptium.net/
+	java.vendor.url.bug = https://github.com/adoptium/adoptium-support/issues
+	java.vendor.version = Temurin-17.0.17+10
+	java.version = 17.0.17
+	java.version.date = 2025-10-21
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Eclipse Adoptium
+	java.vm.version = 17.0.17+10
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = C:\wildfly
+	jboss.host.name = monkeytoaster
+	jboss.modules.dir = C:\wildfly\modules
+	jboss.node.name = monkeytoaster
+	jboss.qualified.host.name = monkeytoaster
+	jboss.server.base.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	jboss.server.config.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration
+	jboss.server.data.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data
+	jboss.server.deploy.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.log.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log
+	jboss.server.name = monkeytoaster
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties
+	module.path = C:\wildfly\modules
+	native.encoding = Cp1252
+	org.jboss.boot.log.file = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 11
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly\jboss-modules.jar -mp C:\wildfly\modules org.jboss.as.standalone --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = GB
+	user.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	user.home = C:\Users\georg
+	user.language = en
+	user.name = georg
+	user.script = 
+	user.timezone = Europe/Athens
+	user.variant = 
+2026-01-19 20:54:57,085 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Xms128m -Xmx512m -D[Standalone] -Dorg.jboss.boot.log.file=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log -Dlogging.configuration=file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties -Djboss.home.dir=C:\wildfly -Djboss.server.base.dir=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x -Djboss.bind.address=0.0.0.0 
+2026-01-19 20:54:57,815 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 20:54:58,089 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 4) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 20:54:58,090 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 4) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 20:54:58,446 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 2) WFLYCTL0028: Attribute 'cluster' in the resource at address '/subsystem=ejb3/service=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2026-01-19 20:54:58,616 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 5) WFLYDR0001: Content added at location C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content\5c\8d591a71d35c37c340b2feb7ddcb36d2515b4a\content
+2026-01-19 20:54:58,657 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2026-01-19 20:54:58,678 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.8.8.Final
+2026-01-19 20:54:58,685 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.8.8.Final
+2026-01-19 20:54:58,723 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 58) WFLYRS0016: RESTEasy version 6.2.1.Final
+2026-01-19 20:54:58,731 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 54) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2026-01-19 20:54:58,734 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) WFLYCLINF0001: Activating Infinispan subsystem.
+2026-01-19 20:54:58,738 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 55) WFLYHEALTH0001: Activating Base Health Subsystem
+2026-01-19 20:54:58,744 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 76) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2026-01-19 20:54:58,744 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 67) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2026-01-19 20:54:58,749 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 66) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2026-01-19 20:54:58,769 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 63) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2026-01-19 20:54:58,789 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 68) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2026-01-19 20:54:58,793 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 65) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2026-01-19 20:54:58,828 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 69) WFLYNAM0001: Activating Naming Subsystem
+2026-01-19 20:54:58,854 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 57) WFLYIO001: Worker 'default' has auto-configured to 40 IO threads with 320 max task threads based on your 20 available processors
+2026-01-19 20:54:58,865 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 78) WFLYWS0002: Activating WebServices Extension
+2026-01-19 20:54:58,926 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "chatbot-ui.war" (runtime-name: "chatbot-ui.war")
+2026-01-19 20:54:58,971 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 2.3.0.Final starting
+2026-01-19 20:54:58,977 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.9.Final)
+2026-01-19 20:54:58,982 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 45) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.1)
+2026-01-19 20:54:59,066 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2026-01-19 20:54:59,066 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2026-01-19 20:54:59,077 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2026-01-19 20:54:59,092 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-6) WFLYELY00023: KeyStore file 'C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore' does not exist. Used blank.
+2026-01-19 20:54:59,120 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 5.0.26.Final
+2026-01-19 20:54:59,155 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-6) WFLYELY01084: KeyStore C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2026-01-19 20:54:59,158 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 77) WFLYUT0014: Creating file handler for path 'C:\wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2026-01-19 20:54:59,307 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 80 (per class), which is derived from the number of CPUs on this host.
+2026-01-19 20:54:59,307 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 320 (per class), which is derived from thread worker pool sizing.
+2026-01-19 20:54:59,327 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+2026-01-19 20:54:59,331 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) Queuing requests.
+2026-01-19 20:54:59,336 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2026-01-19 20:54:59,484 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTP listener default listening on [0:0:0:0:0:0:0:0]:8080
+2026-01-19 20:54:59,612 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTPS listener https listening on [0:0:0:0:0:0:0:0]:8443
+2026-01-19 20:54:59,727 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2026-01-19 20:55:00,634 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 20:55:01,174 INFO  [org.xnio] (CLI command executor) XNIO version 3.8.8.Final
+2026-01-19 20:55:01,180 INFO  [org.xnio.nio] (CLI command executor) XNIO NIO Implementation Version 3.8.8.Final
+2026-01-19 20:55:01,257 INFO  [org.jboss.remoting] (CLI command executor) JBoss Remoting version 5.0.26.Final
+2026-01-19 20:55:01,266 INFO  [org.jboss.threads] (CLI command executor) JBoss Threads version 2.4.0.Final
+2026-01-19 20:55:01,294 INFO  [org.wildfly.security] (CLI command executor) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 22:08:21,421 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:08:22,104 INFO  [org.jboss.modules] (CLI command executor) JBoss Modules version 2.0.3.Final
+2026-01-19 22:08:22,151 INFO  [org.jboss.msc] (CLI command executor) JBoss MSC version 1.4.13.Final
+2026-01-19 22:08:22,155 INFO  [org.jboss.threads] (CLI command executor) JBoss Threads version 2.4.0.Final
+2026-01-19 22:08:22,231 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) starting
+2026-01-19 22:08:22,232 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	file.encoding = Cp1252
+	file.separator = \
+	java.class.path = C:\wildfly\jboss-modules.jar
+	java.class.version = 61.0
+	java.home = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot
+	java.io.tmpdir = C:\Users\georg\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\PowerShell\7;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;$env:USERPROFILE\.bun\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\HP\HP One Agent;C:\Program Files\PowerShell\7\;C:\Users\georg\.local\bin;C:\Users\georg\.bun\bin;$env:USERPROFILE\.bun\bin;C:\Users\georg\Desktop\WFF_Universe\WWF_upload\.venv\Scripts;C:\Program Files\PowerShell\7;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Python312\Scripts\;C:\Python312\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\HP\HP One Agent;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\nodejs\;C:\Strawberry\c\bin;C:\Strawberry;C:\Users\georg\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\georg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\georg\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\tectonic;C:\Program Files\GitHub CLI;C:\stripe;C:\Program Files\Apache\maven\bin;;.
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.17+10
+	java.specification.maintenance.version = 1
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Eclipse Adoptium
+	java.vendor.url = https://adoptium.net/
+	java.vendor.url.bug = https://github.com/adoptium/adoptium-support/issues
+	java.vendor.version = Temurin-17.0.17+10
+	java.version = 17.0.17
+	java.version.date = 2025-10-21
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Eclipse Adoptium
+	java.vm.version = 17.0.17+10
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = C:\wildfly
+	jboss.host.name = monkeytoaster
+	jboss.modules.dir = C:\wildfly\modules
+	jboss.node.name = monkeytoaster
+	jboss.qualified.host.name = monkeytoaster
+	jboss.server.base.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	jboss.server.config.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration
+	jboss.server.content.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.data.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data
+	jboss.server.deploy.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.log.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log
+	jboss.server.name = monkeytoaster
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties
+	module.path = C:\wildfly\modules
+	native.encoding = Cp1252
+	org.jboss.boot.log.file = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log\server.log
+	org.jboss.resolver.warning = true
+	org.wildfly.logging.embedded = false
+	os.arch = amd64
+	os.name = Windows 11
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly\jboss-modules.jar -mp C:\wildfly\modules org.jboss.as.cli --file=C:\Users\georg\AppData\Local\Temp\cargo-wildfly-16100712779036042740.cli
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = GB
+	user.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	user.home = C:\Users\georg
+	user.language = en
+	user.name = georg
+	user.script = 
+	user.timezone = Europe/Athens
+	user.variant = 
+2026-01-19 22:08:22,237 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se -Dorg.jboss.boot.log.file=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log -Dlogging.configuration=file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties -Djboss.home.dir=C:\wildfly -Djboss.server.base.dir=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x -Djboss.bind.address=0.0.0.0 
+2026-01-19 22:08:23,055 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 22:08:23,421 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 4) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:08:23,422 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 4) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:08:23,852 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'cluster' in the resource at address '/subsystem=ejb3/service=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2026-01-19 22:08:24,014 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-8) WFLYELY00023: KeyStore file 'C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore' does not exist. Used blank.
+2026-01-19 22:08:24,025 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-6) WFLYELY01084: KeyStore C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2026-01-19 22:08:24,054 INFO  [org.jboss.as.patching] (MSC service thread 1-5) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2026-01-19 22:08:24,238 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2026-01-19 22:08:24,242 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) started in 2137ms - Started 50 of 73 services (24 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
+2026-01-19 22:08:24,472 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:08:24,491 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:08:24,508 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:08:24,530 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:08:24,545 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:08:24,560 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:08:24,576 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:08:24,597 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) stopped in 14ms
+2026-01-19 22:08:24,600 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:08:24,993 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:08:25,366 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2026-01-19 22:08:25,371 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2026-01-19 22:08:25,445 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) starting
+2026-01-19 22:08:25,445 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = Cp1252
+	file.separator = \
+	java.class.path = C:\wildfly\jboss-modules.jar
+	java.class.version = 61.0
+	java.home = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot
+	java.io.tmpdir = C:\Users\georg\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\PowerShell\7;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;$env:USERPROFILE\.bun\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\HP\HP One Agent;C:\Program Files\PowerShell\7\;C:\Users\georg\.local\bin;C:\Users\georg\.bun\bin;$env:USERPROFILE\.bun\bin;C:\Users\georg\Desktop\WFF_Universe\WWF_upload\.venv\Scripts;C:\Program Files\PowerShell\7;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Python312\Scripts\;C:\Python312\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\HP\HP One Agent;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\nodejs\;C:\Strawberry\c\bin;C:\Strawberry;C:\Users\georg\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\georg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\georg\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\tectonic;C:\Program Files\GitHub CLI;C:\stripe;C:\Program Files\Apache\maven\bin;;.
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.17+10
+	java.specification.maintenance.version = 1
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Eclipse Adoptium
+	java.vendor.url = https://adoptium.net/
+	java.vendor.url.bug = https://github.com/adoptium/adoptium-support/issues
+	java.vendor.version = Temurin-17.0.17+10
+	java.version = 17.0.17
+	java.version.date = 2025-10-21
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Eclipse Adoptium
+	java.vm.version = 17.0.17+10
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = C:\wildfly
+	jboss.host.name = monkeytoaster
+	jboss.modules.dir = C:\wildfly\modules
+	jboss.node.name = monkeytoaster
+	jboss.qualified.host.name = monkeytoaster
+	jboss.server.base.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	jboss.server.config.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration
+	jboss.server.data.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data
+	jboss.server.deploy.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.log.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log
+	jboss.server.name = monkeytoaster
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties
+	module.path = C:\wildfly\modules
+	native.encoding = Cp1252
+	org.jboss.boot.log.file = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 11
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly\jboss-modules.jar -mp C:\wildfly\modules org.jboss.as.standalone --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = GB
+	user.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	user.home = C:\Users\georg
+	user.language = en
+	user.name = georg
+	user.script = 
+	user.timezone = Europe/Athens
+	user.variant = 
+2026-01-19 22:08:25,448 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Xms128m -Xmx512m --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se -D[Standalone] -Dorg.jboss.boot.log.file=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log -Dlogging.configuration=file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties -Djboss.home.dir=C:\wildfly -Djboss.server.base.dir=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x -Djboss.bind.address=0.0.0.0 
+2026-01-19 22:08:26,158 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 22:08:26,445 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 10) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:08:26,445 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 10) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:08:26,784 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 2) WFLYCTL0028: Attribute 'cluster' in the resource at address '/subsystem=ejb3/service=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2026-01-19 22:08:26,982 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 5) WFLYDR0001: Content added at location C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content\06\b840d48e9488958e5252413cc24207df4276d3\content
+2026-01-19 22:08:27,028 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2026-01-19 22:08:27,050 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.8.8.Final
+2026-01-19 22:08:27,068 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.8.8.Final
+2026-01-19 22:08:27,135 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 58) WFLYRS0016: RESTEasy version 6.2.1.Final
+2026-01-19 22:08:27,146 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 54) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2026-01-19 22:08:27,152 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) WFLYCLINF0001: Activating Infinispan subsystem.
+2026-01-19 22:08:27,158 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 55) WFLYHEALTH0001: Activating Base Health Subsystem
+2026-01-19 22:08:27,165 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 76) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2026-01-19 22:08:27,166 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 67) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2026-01-19 22:08:27,168 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 66) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2026-01-19 22:08:27,184 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 63) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2026-01-19 22:08:27,195 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 57) WFLYIO001: Worker 'default' has auto-configured to 40 IO threads with 320 max task threads based on your 20 available processors
+2026-01-19 22:08:27,203 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 68) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2026-01-19 22:08:27,208 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 65) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2026-01-19 22:08:27,235 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 69) WFLYNAM0001: Activating Naming Subsystem
+2026-01-19 22:08:27,267 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 78) WFLYWS0002: Activating WebServices Extension
+2026-01-19 22:08:27,323 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "chatbot-ui.war" (runtime-name: "chatbot-ui.war")
+2026-01-19 22:08:27,383 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 2.3.0.Final starting
+2026-01-19 22:08:27,387 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.9.Final)
+2026-01-19 22:08:27,393 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 45) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.1)
+2026-01-19 22:08:27,461 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 5.0.26.Final
+2026-01-19 22:08:27,496 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2026-01-19 22:08:27,503 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2026-01-19 22:08:27,516 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2026-01-19 22:08:27,540 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY00023: KeyStore file 'C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore' does not exist. Used blank.
+2026-01-19 22:08:27,570 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 77) WFLYUT0014: Creating file handler for path 'C:\wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2026-01-19 22:08:27,603 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-8) WFLYELY01084: KeyStore C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2026-01-19 22:08:27,721 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 320 (per class), which is derived from thread worker pool sizing.
+2026-01-19 22:08:27,721 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 80 (per class), which is derived from the number of CPUs on this host.
+2026-01-19 22:08:27,737 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
+2026-01-19 22:08:27,740 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) Queuing requests.
+2026-01-19 22:08:27,746 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0018: Host default-host starting
+2026-01-19 22:08:27,865 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on [0:0:0:0:0:0:0:0]:8080
+2026-01-19 22:08:27,960 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTPS listener https listening on [0:0:0:0:0:0:0:0]:8443
+2026-01-19 22:08:28,074 INFO  [org.jboss.as.patching] (MSC service thread 1-5) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2026-01-19 22:08:28,749 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:08:29,449 INFO  [org.xnio] (CLI command executor) XNIO version 3.8.8.Final
+2026-01-19 22:08:29,455 INFO  [org.xnio.nio] (CLI command executor) XNIO NIO Implementation Version 3.8.8.Final
+2026-01-19 22:08:29,544 INFO  [org.jboss.remoting] (CLI command executor) JBoss Remoting version 5.0.26.Final
+2026-01-19 22:08:29,555 INFO  [org.jboss.threads] (CLI command executor) JBoss Threads version 2.4.0.Final
+2026-01-19 22:08:29,578 INFO  [org.wildfly.security] (CLI command executor) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 22:09:50,736 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:09:51,281 INFO  [org.jboss.modules] (CLI command executor) JBoss Modules version 2.0.3.Final
+2026-01-19 22:09:51,322 INFO  [org.jboss.msc] (CLI command executor) JBoss MSC version 1.4.13.Final
+2026-01-19 22:09:51,327 INFO  [org.jboss.threads] (CLI command executor) JBoss Threads version 2.4.0.Final
+2026-01-19 22:09:51,393 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) starting
+2026-01-19 22:09:51,394 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	file.encoding = Cp1252
+	file.separator = \
+	java.class.path = C:\wildfly\jboss-modules.jar
+	java.class.version = 61.0
+	java.home = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot
+	java.io.tmpdir = C:\Users\georg\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\PowerShell\7;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;$env:USERPROFILE\.bun\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\HP\HP One Agent;C:\Program Files\PowerShell\7\;C:\Users\georg\.local\bin;C:\Users\georg\.bun\bin;$env:USERPROFILE\.bun\bin;C:\Users\georg\Desktop\WFF_Universe\WWF_upload\.venv\Scripts;C:\Program Files\PowerShell\7;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Python312\Scripts\;C:\Python312\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\HP\HP One Agent;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\nodejs\;C:\Strawberry\c\bin;C:\Strawberry;C:\Users\georg\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\georg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\georg\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\tectonic;C:\Program Files\GitHub CLI;C:\stripe;C:\Program Files\Apache\maven\bin;;.
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.17+10
+	java.specification.maintenance.version = 1
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Eclipse Adoptium
+	java.vendor.url = https://adoptium.net/
+	java.vendor.url.bug = https://github.com/adoptium/adoptium-support/issues
+	java.vendor.version = Temurin-17.0.17+10
+	java.version = 17.0.17
+	java.version.date = 2025-10-21
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Eclipse Adoptium
+	java.vm.version = 17.0.17+10
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = C:\wildfly
+	jboss.host.name = monkeytoaster
+	jboss.modules.dir = C:\wildfly\modules
+	jboss.node.name = monkeytoaster
+	jboss.qualified.host.name = monkeytoaster
+	jboss.server.base.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	jboss.server.config.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration
+	jboss.server.content.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.data.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data
+	jboss.server.deploy.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.log.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log
+	jboss.server.name = monkeytoaster
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties
+	module.path = C:\wildfly\modules
+	native.encoding = Cp1252
+	org.jboss.boot.log.file = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log\server.log
+	org.jboss.resolver.warning = true
+	org.wildfly.logging.embedded = false
+	os.arch = amd64
+	os.name = Windows 11
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly\jboss-modules.jar -mp C:\wildfly\modules org.jboss.as.cli --file=C:\Users\georg\AppData\Local\Temp\cargo-wildfly-16633551803940193889.cli
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = GB
+	user.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	user.home = C:\Users\georg
+	user.language = en
+	user.name = georg
+	user.script = 
+	user.timezone = Europe/Athens
+	user.variant = 
+2026-01-19 22:09:51,396 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se -Dorg.jboss.boot.log.file=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log -Dlogging.configuration=file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties -Djboss.home.dir=C:\wildfly -Djboss.server.base.dir=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x -Djboss.bind.address=0.0.0.0 
+2026-01-19 22:09:52,058 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 22:09:52,322 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 10) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:09:52,322 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 10) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:09:52,671 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'cluster' in the resource at address '/subsystem=ejb3/service=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2026-01-19 22:09:52,831 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-6) WFLYELY00023: KeyStore file 'C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore' does not exist. Used blank.
+2026-01-19 22:09:52,837 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-7) WFLYELY01084: KeyStore C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2026-01-19 22:09:52,852 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2026-01-19 22:09:52,991 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2026-01-19 22:09:52,993 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) started in 1711ms - Started 50 of 73 services (24 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
+2026-01-19 22:09:53,209 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:09:53,227 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:09:53,242 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:09:53,261 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:09:53,276 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:09:53,290 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:09:53,305 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:09:53,325 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) stopped in 16ms
+2026-01-19 22:09:53,328 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:09:53,679 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:09:54,064 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2026-01-19 22:09:54,069 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2026-01-19 22:09:54,142 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) starting
+2026-01-19 22:09:54,143 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = Cp1252
+	file.separator = \
+	java.class.path = C:\wildfly\jboss-modules.jar
+	java.class.version = 61.0
+	java.home = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot
+	java.io.tmpdir = C:\Users\georg\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\PowerShell\7;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;$env:USERPROFILE\.bun\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\HP\HP One Agent;C:\Program Files\PowerShell\7\;C:\Users\georg\.local\bin;C:\Users\georg\.bun\bin;$env:USERPROFILE\.bun\bin;C:\Users\georg\Desktop\WFF_Universe\WWF_upload\.venv\Scripts;C:\Program Files\PowerShell\7;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Python312\Scripts\;C:\Python312\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\HP\HP One Agent;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\nodejs\;C:\Strawberry\c\bin;C:\Strawberry;C:\Users\georg\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\georg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\georg\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\tectonic;C:\Program Files\GitHub CLI;C:\stripe;C:\Program Files\Apache\maven\bin;;.
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.17+10
+	java.specification.maintenance.version = 1
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Eclipse Adoptium
+	java.vendor.url = https://adoptium.net/
+	java.vendor.url.bug = https://github.com/adoptium/adoptium-support/issues
+	java.vendor.version = Temurin-17.0.17+10
+	java.version = 17.0.17
+	java.version.date = 2025-10-21
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Eclipse Adoptium
+	java.vm.version = 17.0.17+10
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = C:\wildfly
+	jboss.host.name = monkeytoaster
+	jboss.modules.dir = C:\wildfly\modules
+	jboss.node.name = monkeytoaster
+	jboss.qualified.host.name = monkeytoaster
+	jboss.server.base.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	jboss.server.config.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration
+	jboss.server.data.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data
+	jboss.server.deploy.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.log.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log
+	jboss.server.name = monkeytoaster
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties
+	module.path = C:\wildfly\modules
+	native.encoding = Cp1252
+	org.jboss.boot.log.file = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 11
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly\jboss-modules.jar -mp C:\wildfly\modules org.jboss.as.standalone --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = GB
+	user.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	user.home = C:\Users\georg
+	user.language = en
+	user.name = georg
+	user.script = 
+	user.timezone = Europe/Athens
+	user.variant = 
+2026-01-19 22:09:54,145 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Xms128m -Xmx512m --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se -D[Standalone] -Dorg.jboss.boot.log.file=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log -Dlogging.configuration=file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties -Djboss.home.dir=C:\wildfly -Djboss.server.base.dir=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x -Djboss.bind.address=0.0.0.0 
+2026-01-19 22:09:54,843 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 22:09:55,118 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 4) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:09:55,119 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 4) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:09:55,470 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 21) WFLYCTL0028: Attribute 'cluster' in the resource at address '/subsystem=ejb3/service=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2026-01-19 22:09:55,613 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 5) WFLYDR0001: Content added at location C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content\9f\cd5d6993c9d9ff36212a044f44f7158c6a03d0\content
+2026-01-19 22:09:55,637 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2026-01-19 22:09:55,652 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.8.8.Final
+2026-01-19 22:09:55,664 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.8.8.Final
+2026-01-19 22:09:55,689 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 58) WFLYRS0016: RESTEasy version 6.2.1.Final
+2026-01-19 22:09:55,698 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 54) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2026-01-19 22:09:55,701 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) WFLYCLINF0001: Activating Infinispan subsystem.
+2026-01-19 22:09:55,704 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 55) WFLYHEALTH0001: Activating Base Health Subsystem
+2026-01-19 22:09:55,707 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 76) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2026-01-19 22:09:55,708 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 67) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2026-01-19 22:09:55,709 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 57) WFLYIO001: Worker 'default' has auto-configured to 40 IO threads with 320 max task threads based on your 20 available processors
+2026-01-19 22:09:55,710 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 66) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2026-01-19 22:09:55,721 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 63) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2026-01-19 22:09:55,736 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 68) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2026-01-19 22:09:55,740 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 65) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2026-01-19 22:09:55,764 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 69) WFLYNAM0001: Activating Naming Subsystem
+2026-01-19 22:09:55,790 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 78) WFLYWS0002: Activating WebServices Extension
+2026-01-19 22:09:55,861 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "chatbot-ui.war" (runtime-name: "chatbot-ui.war")
+2026-01-19 22:09:55,866 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.9.Final)
+2026-01-19 22:09:55,867 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.3.0.Final starting
+2026-01-19 22:09:55,875 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 45) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.1)
+2026-01-19 22:09:55,919 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.26.Final
+2026-01-19 22:09:55,927 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
+2026-01-19 22:09:55,927 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2026-01-19 22:09:55,951 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2026-01-19 22:09:55,972 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY00023: KeyStore file 'C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore' does not exist. Used blank.
+2026-01-19 22:09:56,033 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 77) WFLYUT0014: Creating file handler for path 'C:\wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2026-01-19 22:09:56,050 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-6) WFLYELY01084: KeyStore C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2026-01-19 22:09:56,156 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 80 (per class), which is derived from the number of CPUs on this host.
+2026-01-19 22:09:56,156 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 320 (per class), which is derived from thread worker pool sizing.
+2026-01-19 22:09:56,163 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+2026-01-19 22:09:56,166 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) Queuing requests.
+2026-01-19 22:09:56,173 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0018: Host default-host starting
+2026-01-19 22:09:56,293 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTP listener default listening on [0:0:0:0:0:0:0:0]:8080
+2026-01-19 22:09:56,388 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on [0:0:0:0:0:0:0:0]:8443
+2026-01-19 22:09:57,073 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:09:57,591 INFO  [org.xnio] (CLI command executor) XNIO version 3.8.8.Final
+2026-01-19 22:09:57,599 INFO  [org.xnio.nio] (CLI command executor) XNIO NIO Implementation Version 3.8.8.Final
+2026-01-19 22:09:57,685 INFO  [org.jboss.remoting] (CLI command executor) JBoss Remoting version 5.0.26.Final
+2026-01-19 22:09:57,695 INFO  [org.jboss.threads] (CLI command executor) JBoss Threads version 2.4.0.Final
+2026-01-19 22:09:57,728 INFO  [org.wildfly.security] (CLI command executor) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 22:11:23,385 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:11:23,892 INFO  [org.jboss.modules] (CLI command executor) JBoss Modules version 2.0.3.Final
+2026-01-19 22:11:23,940 INFO  [org.jboss.msc] (CLI command executor) JBoss MSC version 1.4.13.Final
+2026-01-19 22:11:23,945 INFO  [org.jboss.threads] (CLI command executor) JBoss Threads version 2.4.0.Final
+2026-01-19 22:11:24,027 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) starting
+2026-01-19 22:11:24,028 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	file.encoding = Cp1252
+	file.separator = \
+	java.class.path = C:\wildfly\jboss-modules.jar
+	java.class.version = 61.0
+	java.home = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot
+	java.io.tmpdir = C:\Users\georg\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\PowerShell\7;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;$env:USERPROFILE\.bun\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\HP\HP One Agent;C:\Program Files\PowerShell\7\;C:\Users\georg\.local\bin;C:\Users\georg\.bun\bin;$env:USERPROFILE\.bun\bin;C:\Users\georg\Desktop\WFF_Universe\WWF_upload\.venv\Scripts;C:\Program Files\PowerShell\7;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Python312\Scripts\;C:\Python312\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\HP\HP One Agent;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\nodejs\;C:\Strawberry\c\bin;C:\Strawberry;C:\Users\georg\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\georg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\georg\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\tectonic;C:\Program Files\GitHub CLI;C:\stripe;C:\Program Files\Apache\maven\bin;;.
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.17+10
+	java.specification.maintenance.version = 1
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Eclipse Adoptium
+	java.vendor.url = https://adoptium.net/
+	java.vendor.url.bug = https://github.com/adoptium/adoptium-support/issues
+	java.vendor.version = Temurin-17.0.17+10
+	java.version = 17.0.17
+	java.version.date = 2025-10-21
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Eclipse Adoptium
+	java.vm.version = 17.0.17+10
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = C:\wildfly
+	jboss.host.name = monkeytoaster
+	jboss.modules.dir = C:\wildfly\modules
+	jboss.node.name = monkeytoaster
+	jboss.qualified.host.name = monkeytoaster
+	jboss.server.base.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	jboss.server.config.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration
+	jboss.server.content.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.data.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data
+	jboss.server.deploy.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.log.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log
+	jboss.server.name = monkeytoaster
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties
+	module.path = C:\wildfly\modules
+	native.encoding = Cp1252
+	org.jboss.boot.log.file = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log\server.log
+	org.jboss.resolver.warning = true
+	org.wildfly.logging.embedded = false
+	os.arch = amd64
+	os.name = Windows 11
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly\jboss-modules.jar -mp C:\wildfly\modules org.jboss.as.cli --file=C:\Users\georg\AppData\Local\Temp\cargo-wildfly-16763397899378028804.cli
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = GB
+	user.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	user.home = C:\Users\georg
+	user.language = en
+	user.name = georg
+	user.script = 
+	user.timezone = Europe/Athens
+	user.variant = 
+2026-01-19 22:11:24,032 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se -Dorg.jboss.boot.log.file=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log -Dlogging.configuration=file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties -Djboss.home.dir=C:\wildfly -Djboss.server.base.dir=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x -Djboss.bind.address=0.0.0.0 
+2026-01-19 22:11:24,823 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 22:11:25,128 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 10) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:11:25,128 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 10) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:11:25,533 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'cluster' in the resource at address '/subsystem=ejb3/service=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2026-01-19 22:11:25,701 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-5) WFLYELY00023: KeyStore file 'C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore' does not exist. Used blank.
+2026-01-19 22:11:25,709 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY01084: KeyStore C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2026-01-19 22:11:25,740 INFO  [org.jboss.as.patching] (MSC service thread 1-5) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2026-01-19 22:11:25,917 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2026-01-19 22:11:25,920 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) started in 2027ms - Started 50 of 73 services (24 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
+2026-01-19 22:11:26,108 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:11:26,128 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:11:26,155 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:11:26,182 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:11:26,204 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:11:26,223 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:11:26,248 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:11:26,279 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) stopped in 25ms
+2026-01-19 22:11:26,285 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:11:26,696 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:11:27,075 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2026-01-19 22:11:27,080 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2026-01-19 22:11:27,149 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) starting
+2026-01-19 22:11:27,150 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = Cp1252
+	file.separator = \
+	java.class.path = C:\wildfly\jboss-modules.jar
+	java.class.version = 61.0
+	java.home = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot
+	java.io.tmpdir = C:\Users\georg\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\PowerShell\7;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;$env:USERPROFILE\.bun\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\HP\HP One Agent;C:\Program Files\PowerShell\7\;C:\Users\georg\.local\bin;C:\Users\georg\.bun\bin;$env:USERPROFILE\.bun\bin;C:\Users\georg\Desktop\WFF_Universe\WWF_upload\.venv\Scripts;C:\Program Files\PowerShell\7;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Python312\Scripts\;C:\Python312\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\HP\HP One Agent;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\nodejs\;C:\Strawberry\c\bin;C:\Strawberry;C:\Users\georg\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\georg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\georg\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\tectonic;C:\Program Files\GitHub CLI;C:\stripe;C:\Program Files\Apache\maven\bin;;.
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.17+10
+	java.specification.maintenance.version = 1
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Eclipse Adoptium
+	java.vendor.url = https://adoptium.net/
+	java.vendor.url.bug = https://github.com/adoptium/adoptium-support/issues
+	java.vendor.version = Temurin-17.0.17+10
+	java.version = 17.0.17
+	java.version.date = 2025-10-21
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Eclipse Adoptium
+	java.vm.version = 17.0.17+10
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = C:\wildfly
+	jboss.host.name = monkeytoaster
+	jboss.modules.dir = C:\wildfly\modules
+	jboss.node.name = monkeytoaster
+	jboss.qualified.host.name = monkeytoaster
+	jboss.server.base.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	jboss.server.config.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration
+	jboss.server.data.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data
+	jboss.server.deploy.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.log.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log
+	jboss.server.name = monkeytoaster
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties
+	module.path = C:\wildfly\modules
+	native.encoding = Cp1252
+	org.jboss.boot.log.file = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 11
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly\jboss-modules.jar -mp C:\wildfly\modules org.jboss.as.standalone --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = GB
+	user.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	user.home = C:\Users\georg
+	user.language = en
+	user.name = georg
+	user.script = 
+	user.timezone = Europe/Athens
+	user.variant = 
+2026-01-19 22:11:27,153 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Xms128m -Xmx512m --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se -D[Standalone] -Dorg.jboss.boot.log.file=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log -Dlogging.configuration=file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties -Djboss.home.dir=C:\wildfly -Djboss.server.base.dir=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x -Djboss.bind.address=0.0.0.0 
+2026-01-19 22:11:27,863 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 22:11:28,113 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 4) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:11:28,113 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 4) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:11:28,447 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 2) WFLYCTL0028: Attribute 'cluster' in the resource at address '/subsystem=ejb3/service=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2026-01-19 22:11:28,603 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 5) WFLYDR0001: Content added at location C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content\a5\54f2fcbc6c530f3e0439033f4f7cd4e681829a\content
+2026-01-19 22:11:28,636 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2026-01-19 22:11:28,652 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.8.8.Final
+2026-01-19 22:11:28,664 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.8.8.Final
+2026-01-19 22:11:28,709 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 58) WFLYRS0016: RESTEasy version 6.2.1.Final
+2026-01-19 22:11:28,717 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 54) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2026-01-19 22:11:28,721 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) WFLYCLINF0001: Activating Infinispan subsystem.
+2026-01-19 22:11:28,724 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 55) WFLYHEALTH0001: Activating Base Health Subsystem
+2026-01-19 22:11:28,728 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 76) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2026-01-19 22:11:28,729 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 67) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2026-01-19 22:11:28,731 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 66) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2026-01-19 22:11:28,745 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 63) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2026-01-19 22:11:28,759 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 68) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2026-01-19 22:11:28,759 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 57) WFLYIO001: Worker 'default' has auto-configured to 40 IO threads with 320 max task threads based on your 20 available processors
+2026-01-19 22:11:28,762 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 65) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2026-01-19 22:11:28,783 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 69) WFLYNAM0001: Activating Naming Subsystem
+2026-01-19 22:11:28,808 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 78) WFLYWS0002: Activating WebServices Extension
+2026-01-19 22:11:28,866 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "chatbot-ui.war" (runtime-name: "chatbot-ui.war")
+2026-01-19 22:11:28,908 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.9.Final)
+2026-01-19 22:11:28,911 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 45) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.1)
+2026-01-19 22:11:28,912 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0003: Undertow 2.3.0.Final starting
+2026-01-19 22:11:28,993 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.26.Final
+2026-01-19 22:11:29,006 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2026-01-19 22:11:29,015 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2026-01-19 22:11:29,017 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2026-01-19 22:11:29,038 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-6) WFLYELY00023: KeyStore file 'C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore' does not exist. Used blank.
+2026-01-19 22:11:29,085 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 77) WFLYUT0014: Creating file handler for path 'C:\wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2026-01-19 22:11:29,117 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY01084: KeyStore C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2026-01-19 22:11:29,251 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 320 (per class), which is derived from thread worker pool sizing.
+2026-01-19 22:11:29,251 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 80 (per class), which is derived from the number of CPUs on this host.
+2026-01-19 22:11:29,255 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2026-01-19 22:11:29,257 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) Queuing requests.
+2026-01-19 22:11:29,265 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2026-01-19 22:11:29,419 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on [0:0:0:0:0:0:0:0]:8080
+2026-01-19 22:11:29,545 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on [0:0:0:0:0:0:0:0]:8443
+2026-01-19 22:11:29,628 INFO  [org.jboss.as.patching] (MSC service thread 1-8) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2026-01-19 22:11:30,328 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:11:30,888 INFO  [org.xnio] (CLI command executor) XNIO version 3.8.8.Final
+2026-01-19 22:11:30,896 INFO  [org.xnio.nio] (CLI command executor) XNIO NIO Implementation Version 3.8.8.Final
+2026-01-19 22:11:30,982 INFO  [org.jboss.remoting] (CLI command executor) JBoss Remoting version 5.0.26.Final
+2026-01-19 22:11:30,992 INFO  [org.jboss.threads] (CLI command executor) JBoss Threads version 2.4.0.Final
+2026-01-19 22:11:31,024 INFO  [org.wildfly.security] (CLI command executor) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 22:12:56,766 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:12:57,316 INFO  [org.jboss.modules] (CLI command executor) JBoss Modules version 2.0.3.Final
+2026-01-19 22:12:57,354 INFO  [org.jboss.msc] (CLI command executor) JBoss MSC version 1.4.13.Final
+2026-01-19 22:12:57,359 INFO  [org.jboss.threads] (CLI command executor) JBoss Threads version 2.4.0.Final
+2026-01-19 22:12:57,428 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) starting
+2026-01-19 22:12:57,429 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	file.encoding = Cp1252
+	file.separator = \
+	java.class.path = C:\wildfly\jboss-modules.jar
+	java.class.version = 61.0
+	java.home = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot
+	java.io.tmpdir = C:\Users\georg\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\PowerShell\7;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;$env:USERPROFILE\.bun\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\HP\HP One Agent;C:\Program Files\PowerShell\7\;C:\Users\georg\.local\bin;C:\Users\georg\.bun\bin;$env:USERPROFILE\.bun\bin;C:\Users\georg\Desktop\WFF_Universe\WWF_upload\.venv\Scripts;C:\Program Files\PowerShell\7;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Python312\Scripts\;C:\Python312\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\HP\HP One Agent;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\nodejs\;C:\Strawberry\c\bin;C:\Strawberry;C:\Users\georg\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\georg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\georg\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\tectonic;C:\Program Files\GitHub CLI;C:\stripe;C:\Program Files\Apache\maven\bin;;.
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.17+10
+	java.specification.maintenance.version = 1
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Eclipse Adoptium
+	java.vendor.url = https://adoptium.net/
+	java.vendor.url.bug = https://github.com/adoptium/adoptium-support/issues
+	java.vendor.version = Temurin-17.0.17+10
+	java.version = 17.0.17
+	java.version.date = 2025-10-21
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Eclipse Adoptium
+	java.vm.version = 17.0.17+10
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = C:\wildfly
+	jboss.host.name = monkeytoaster
+	jboss.modules.dir = C:\wildfly\modules
+	jboss.node.name = monkeytoaster
+	jboss.qualified.host.name = monkeytoaster
+	jboss.server.base.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	jboss.server.config.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration
+	jboss.server.content.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.data.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data
+	jboss.server.deploy.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.log.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log
+	jboss.server.name = monkeytoaster
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties
+	module.path = C:\wildfly\modules
+	native.encoding = Cp1252
+	org.jboss.boot.log.file = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log\server.log
+	org.jboss.resolver.warning = true
+	org.wildfly.logging.embedded = false
+	os.arch = amd64
+	os.name = Windows 11
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly\jboss-modules.jar -mp C:\wildfly\modules org.jboss.as.cli --file=C:\Users\georg\AppData\Local\Temp\cargo-wildfly-11847631039025313276.cli
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = GB
+	user.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	user.home = C:\Users\georg
+	user.language = en
+	user.name = georg
+	user.script = 
+	user.timezone = Europe/Athens
+	user.variant = 
+2026-01-19 22:12:57,431 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se -Dorg.jboss.boot.log.file=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log -Dlogging.configuration=file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties -Djboss.home.dir=C:\wildfly -Djboss.server.base.dir=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x -Djboss.bind.address=0.0.0.0 
+2026-01-19 22:12:58,144 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 22:12:58,507 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 4) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:12:58,507 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 4) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:12:58,911 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'cluster' in the resource at address '/subsystem=ejb3/service=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2026-01-19 22:12:59,116 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY00023: KeyStore file 'C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore' does not exist. Used blank.
+2026-01-19 22:12:59,124 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-7) WFLYELY01084: KeyStore C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2026-01-19 22:12:59,150 INFO  [org.jboss.as.patching] (MSC service thread 1-3) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2026-01-19 22:12:59,400 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2026-01-19 22:12:59,406 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) started in 2090ms - Started 50 of 73 services (24 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
+2026-01-19 22:12:59,701 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:12:59,728 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:12:59,755 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:12:59,785 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:12:59,811 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:12:59,833 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:12:59,856 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:12:59,882 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) stopped in 21ms
+2026-01-19 22:12:59,887 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:13:00,396 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:13:00,827 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2026-01-19 22:13:00,833 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2026-01-19 22:13:00,921 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) starting
+2026-01-19 22:13:00,922 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = Cp1252
+	file.separator = \
+	java.class.path = C:\wildfly\jboss-modules.jar
+	java.class.version = 61.0
+	java.home = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot
+	java.io.tmpdir = C:\Users\georg\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\PowerShell\7;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;$env:USERPROFILE\.bun\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\HP\HP One Agent;C:\Program Files\PowerShell\7\;C:\Users\georg\.local\bin;C:\Users\georg\.bun\bin;$env:USERPROFILE\.bun\bin;C:\Users\georg\Desktop\WFF_Universe\WWF_upload\.venv\Scripts;C:\Program Files\PowerShell\7;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Python312\Scripts\;C:\Python312\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\HP\HP One Agent;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\nodejs\;C:\Strawberry\c\bin;C:\Strawberry;C:\Users\georg\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\georg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\georg\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\tectonic;C:\Program Files\GitHub CLI;C:\stripe;C:\Program Files\Apache\maven\bin;;.
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.17+10
+	java.specification.maintenance.version = 1
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Eclipse Adoptium
+	java.vendor.url = https://adoptium.net/
+	java.vendor.url.bug = https://github.com/adoptium/adoptium-support/issues
+	java.vendor.version = Temurin-17.0.17+10
+	java.version = 17.0.17
+	java.version.date = 2025-10-21
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Eclipse Adoptium
+	java.vm.version = 17.0.17+10
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = C:\wildfly
+	jboss.host.name = monkeytoaster
+	jboss.modules.dir = C:\wildfly\modules
+	jboss.node.name = monkeytoaster
+	jboss.qualified.host.name = monkeytoaster
+	jboss.server.base.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	jboss.server.config.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration
+	jboss.server.data.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data
+	jboss.server.deploy.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.log.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log
+	jboss.server.name = monkeytoaster
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties
+	module.path = C:\wildfly\modules
+	native.encoding = Cp1252
+	org.jboss.boot.log.file = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 11
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly\jboss-modules.jar -mp C:\wildfly\modules org.jboss.as.standalone --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = GB
+	user.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	user.home = C:\Users\georg
+	user.language = en
+	user.name = georg
+	user.script = 
+	user.timezone = Europe/Athens
+	user.variant = 
+2026-01-19 22:13:00,924 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Xms128m -Xmx512m --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se -D[Standalone] -Dorg.jboss.boot.log.file=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log -Dlogging.configuration=file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties -Djboss.home.dir=C:\wildfly -Djboss.server.base.dir=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x -Djboss.bind.address=0.0.0.0 
+2026-01-19 22:13:01,615 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 22:13:01,877 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 4) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:13:01,878 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 4) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:13:02,173 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 21) WFLYCTL0028: Attribute 'cluster' in the resource at address '/subsystem=ejb3/service=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2026-01-19 22:13:02,325 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 5) WFLYDR0001: Content added at location C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content\f2\beae7bb3619942bf0d4add6fbb10fcf5d88a59\content
+2026-01-19 22:13:02,352 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2026-01-19 22:13:02,375 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.8.8.Final
+2026-01-19 22:13:02,386 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.8.8.Final
+2026-01-19 22:13:02,422 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 58) WFLYRS0016: RESTEasy version 6.2.1.Final
+2026-01-19 22:13:02,431 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 54) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2026-01-19 22:13:02,435 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) WFLYCLINF0001: Activating Infinispan subsystem.
+2026-01-19 22:13:02,438 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 55) WFLYHEALTH0001: Activating Base Health Subsystem
+2026-01-19 22:13:02,444 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 76) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2026-01-19 22:13:02,444 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 67) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2026-01-19 22:13:02,446 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 66) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2026-01-19 22:13:02,459 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 63) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2026-01-19 22:13:02,472 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 68) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2026-01-19 22:13:02,476 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 65) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2026-01-19 22:13:02,500 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 69) WFLYNAM0001: Activating Naming Subsystem
+2026-01-19 22:13:02,510 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 57) WFLYIO001: Worker 'default' has auto-configured to 40 IO threads with 320 max task threads based on your 20 available processors
+2026-01-19 22:13:02,529 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 78) WFLYWS0002: Activating WebServices Extension
+2026-01-19 22:13:02,658 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "chatbot-ui.war" (runtime-name: "chatbot-ui.war")
+2026-01-19 22:13:02,668 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 2.3.0.Final starting
+2026-01-19 22:13:02,678 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 45) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.1)
+2026-01-19 22:13:02,679 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.9.Final)
+2026-01-19 22:13:02,758 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY00023: KeyStore file 'C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore' does not exist. Used blank.
+2026-01-19 22:13:02,801 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+2026-01-19 22:13:02,808 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2026-01-19 22:13:02,810 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2026-01-19 22:13:02,835 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY01084: KeyStore C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2026-01-19 22:13:02,854 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.26.Final
+2026-01-19 22:13:02,867 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 77) WFLYUT0014: Creating file handler for path 'C:\wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2026-01-19 22:13:03,030 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 80 (per class), which is derived from the number of CPUs on this host.
+2026-01-19 22:13:03,030 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 320 (per class), which is derived from thread worker pool sizing.
+2026-01-19 22:13:03,041 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+2026-01-19 22:13:03,046 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) Queuing requests.
+2026-01-19 22:13:03,079 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+2026-01-19 22:13:03,218 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on [0:0:0:0:0:0:0:0]:8080
+2026-01-19 22:13:03,292 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTPS listener https listening on [0:0:0:0:0:0:0:0]:8443
+2026-01-19 22:13:03,429 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2026-01-19 22:13:04,093 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:13:04,718 INFO  [org.xnio] (CLI command executor) XNIO version 3.8.8.Final
+2026-01-19 22:13:04,727 INFO  [org.xnio.nio] (CLI command executor) XNIO NIO Implementation Version 3.8.8.Final
+2026-01-19 22:13:04,816 INFO  [org.jboss.remoting] (CLI command executor) JBoss Remoting version 5.0.26.Final
+2026-01-19 22:13:04,826 INFO  [org.jboss.threads] (CLI command executor) JBoss Threads version 2.4.0.Final
+2026-01-19 22:13:04,849 INFO  [org.wildfly.security] (CLI command executor) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 22:15:26,695 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:15:27,357 INFO  [org.jboss.modules] (CLI command executor) JBoss Modules version 2.0.3.Final
+2026-01-19 22:15:27,411 INFO  [org.jboss.msc] (CLI command executor) JBoss MSC version 1.4.13.Final
+2026-01-19 22:15:27,416 INFO  [org.jboss.threads] (CLI command executor) JBoss Threads version 2.4.0.Final
+2026-01-19 22:15:27,496 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) starting
+2026-01-19 22:15:27,497 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	file.encoding = Cp1252
+	file.separator = \
+	java.class.path = C:\wildfly\jboss-modules.jar
+	java.class.version = 61.0
+	java.home = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot
+	java.io.tmpdir = C:\Users\georg\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\PowerShell\7;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;$env:USERPROFILE\.bun\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\HP\HP One Agent;C:\Program Files\PowerShell\7\;C:\Users\georg\.local\bin;C:\Users\georg\.bun\bin;$env:USERPROFILE\.bun\bin;C:\Users\georg\Desktop\WFF_Universe\WWF_upload\.venv\Scripts;C:\Program Files\PowerShell\7;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Python312\Scripts\;C:\Python312\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\HP\HP One Agent;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\nodejs\;C:\Strawberry\c\bin;C:\Strawberry;C:\Users\georg\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\georg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\georg\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\tectonic;C:\Program Files\GitHub CLI;C:\stripe;C:\Program Files\Apache\maven\bin;;.
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.17+10
+	java.specification.maintenance.version = 1
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Eclipse Adoptium
+	java.vendor.url = https://adoptium.net/
+	java.vendor.url.bug = https://github.com/adoptium/adoptium-support/issues
+	java.vendor.version = Temurin-17.0.17+10
+	java.version = 17.0.17
+	java.version.date = 2025-10-21
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Eclipse Adoptium
+	java.vm.version = 17.0.17+10
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = C:\wildfly
+	jboss.host.name = monkeytoaster
+	jboss.modules.dir = C:\wildfly\modules
+	jboss.node.name = monkeytoaster
+	jboss.qualified.host.name = monkeytoaster
+	jboss.server.base.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	jboss.server.config.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration
+	jboss.server.content.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.data.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data
+	jboss.server.deploy.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.log.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log
+	jboss.server.name = monkeytoaster
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties
+	module.path = C:\wildfly\modules
+	native.encoding = Cp1252
+	org.jboss.boot.log.file = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log\server.log
+	org.jboss.resolver.warning = true
+	org.wildfly.logging.embedded = false
+	os.arch = amd64
+	os.name = Windows 11
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly\jboss-modules.jar -mp C:\wildfly\modules org.jboss.as.cli --file=C:\Users\georg\AppData\Local\Temp\cargo-wildfly-7397774187668959488.cli
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = GB
+	user.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	user.home = C:\Users\georg
+	user.language = en
+	user.name = georg
+	user.script = 
+	user.timezone = Europe/Athens
+	user.variant = 
+2026-01-19 22:15:27,501 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se -Dorg.jboss.boot.log.file=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log -Dlogging.configuration=file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties -Djboss.home.dir=C:\wildfly -Djboss.server.base.dir=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x -Djboss.bind.address=0.0.0.0 
+2026-01-19 22:15:28,458 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 22:15:28,838 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 22) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:15:28,839 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 22) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:15:29,263 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'cluster' in the resource at address '/subsystem=ejb3/service=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2026-01-19 22:15:29,426 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-2) WFLYELY00023: KeyStore file 'C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore' does not exist. Used blank.
+2026-01-19 22:15:29,440 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-8) WFLYELY01084: KeyStore C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2026-01-19 22:15:29,468 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2026-01-19 22:15:29,739 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2026-01-19 22:15:29,741 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) started in 2383ms - Started 50 of 73 services (24 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
+2026-01-19 22:15:29,994 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:15:30,023 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:15:30,049 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:15:30,073 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:15:30,099 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:15:30,119 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:15:30,141 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:15:30,165 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) stopped in 19ms
+2026-01-19 22:15:30,169 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:15:30,587 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:15:31,058 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2026-01-19 22:15:31,063 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2026-01-19 22:15:31,133 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) starting
+2026-01-19 22:15:31,133 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = Cp1252
+	file.separator = \
+	java.class.path = C:\wildfly\jboss-modules.jar
+	java.class.version = 61.0
+	java.home = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot
+	java.io.tmpdir = C:\Users\georg\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\PowerShell\7;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;$env:USERPROFILE\.bun\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\HP\HP One Agent;C:\Program Files\PowerShell\7\;C:\Users\georg\.local\bin;C:\Users\georg\.bun\bin;$env:USERPROFILE\.bun\bin;C:\Users\georg\Desktop\WFF_Universe\WWF_upload\.venv\Scripts;C:\Program Files\PowerShell\7;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Python312\Scripts\;C:\Python312\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\HP\HP One Agent;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\nodejs\;C:\Strawberry\c\bin;C:\Strawberry;C:\Users\georg\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\georg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\georg\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\tectonic;C:\Program Files\GitHub CLI;C:\stripe;C:\Program Files\Apache\maven\bin;;.
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.17+10
+	java.specification.maintenance.version = 1
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Eclipse Adoptium
+	java.vendor.url = https://adoptium.net/
+	java.vendor.url.bug = https://github.com/adoptium/adoptium-support/issues
+	java.vendor.version = Temurin-17.0.17+10
+	java.version = 17.0.17
+	java.version.date = 2025-10-21
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Eclipse Adoptium
+	java.vm.version = 17.0.17+10
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = C:\wildfly
+	jboss.host.name = monkeytoaster
+	jboss.modules.dir = C:\wildfly\modules
+	jboss.node.name = monkeytoaster
+	jboss.qualified.host.name = monkeytoaster
+	jboss.server.base.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	jboss.server.config.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration
+	jboss.server.data.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data
+	jboss.server.deploy.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.log.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log
+	jboss.server.name = monkeytoaster
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties
+	module.path = C:\wildfly\modules
+	native.encoding = Cp1252
+	org.jboss.boot.log.file = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 11
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly\jboss-modules.jar -mp C:\wildfly\modules org.jboss.as.standalone --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = GB
+	user.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	user.home = C:\Users\georg
+	user.language = en
+	user.name = georg
+	user.script = 
+	user.timezone = Europe/Athens
+	user.variant = 
+2026-01-19 22:15:31,137 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Xms128m -Xmx512m --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se -D[Standalone] -Dorg.jboss.boot.log.file=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log -Dlogging.configuration=file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties -Djboss.home.dir=C:\wildfly -Djboss.server.base.dir=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x -Djboss.bind.address=0.0.0.0 
+2026-01-19 22:15:31,922 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 22:15:32,172 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 4) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:15:32,173 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 4) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:15:32,535 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 32) WFLYCTL0028: Attribute 'cluster' in the resource at address '/subsystem=ejb3/service=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2026-01-19 22:15:32,749 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 5) WFLYDR0001: Content added at location C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content\ef\8882e1c30d383d2da64570cec617c4f735a81c\content
+2026-01-19 22:15:32,797 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2026-01-19 22:15:32,824 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.8.8.Final
+2026-01-19 22:15:32,837 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.8.8.Final
+2026-01-19 22:15:32,896 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 58) WFLYRS0016: RESTEasy version 6.2.1.Final
+2026-01-19 22:15:32,905 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 54) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2026-01-19 22:15:32,910 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) WFLYCLINF0001: Activating Infinispan subsystem.
+2026-01-19 22:15:32,915 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 55) WFLYHEALTH0001: Activating Base Health Subsystem
+2026-01-19 22:15:32,920 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 76) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2026-01-19 22:15:32,920 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 67) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2026-01-19 22:15:32,923 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 66) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2026-01-19 22:15:32,937 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 63) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2026-01-19 22:15:32,937 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 57) WFLYIO001: Worker 'default' has auto-configured to 40 IO threads with 320 max task threads based on your 20 available processors
+2026-01-19 22:15:32,954 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 68) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2026-01-19 22:15:32,960 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 65) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2026-01-19 22:15:32,988 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 69) WFLYNAM0001: Activating Naming Subsystem
+2026-01-19 22:15:33,026 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 78) WFLYWS0002: Activating WebServices Extension
+2026-01-19 22:15:33,094 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "chatbot-ui.war" (runtime-name: "chatbot-ui.war")
+2026-01-19 22:15:33,135 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.3.0.Final starting
+2026-01-19 22:15:33,140 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.9.Final)
+2026-01-19 22:15:33,146 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 45) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.1)
+2026-01-19 22:15:33,220 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.26.Final
+2026-01-19 22:15:33,235 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = h2
+2026-01-19 22:15:33,237 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2026-01-19 22:15:33,245 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2026-01-19 22:15:33,267 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY00023: KeyStore file 'C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore' does not exist. Used blank.
+2026-01-19 22:15:33,330 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 77) WFLYUT0014: Creating file handler for path 'C:\wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2026-01-19 22:15:33,351 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-7) WFLYELY01084: KeyStore C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2026-01-19 22:15:33,521 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 80 (per class), which is derived from the number of CPUs on this host.
+2026-01-19 22:15:33,521 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 320 (per class), which is derived from thread worker pool sizing.
+2026-01-19 22:15:33,533 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2026-01-19 22:15:33,536 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) Queuing requests.
+2026-01-19 22:15:33,545 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+2026-01-19 22:15:33,716 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on [0:0:0:0:0:0:0:0]:8080
+2026-01-19 22:15:33,917 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on [0:0:0:0:0:0:0:0]:8443
+2026-01-19 22:15:34,060 INFO  [org.jboss.as.patching] (MSC service thread 1-7) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2026-01-19 22:15:34,926 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:15:35,693 INFO  [org.xnio] (CLI command executor) XNIO version 3.8.8.Final
+2026-01-19 22:15:35,705 INFO  [org.xnio.nio] (CLI command executor) XNIO NIO Implementation Version 3.8.8.Final
+2026-01-19 22:15:35,819 INFO  [org.jboss.remoting] (CLI command executor) JBoss Remoting version 5.0.26.Final
+2026-01-19 22:15:35,834 INFO  [org.jboss.threads] (CLI command executor) JBoss Threads version 2.4.0.Final
+2026-01-19 22:15:35,860 INFO  [org.wildfly.security] (CLI command executor) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 22:15:42,198 ERROR [org.jboss.as.cli.CommandContext] (main) Timeout waiting for the system to boot.
+2026-01-19 22:19:30,100 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:19:30,944 INFO  [org.jboss.modules] (CLI command executor) JBoss Modules version 2.0.3.Final
+2026-01-19 22:19:31,014 INFO  [org.jboss.msc] (CLI command executor) JBoss MSC version 1.4.13.Final
+2026-01-19 22:19:31,021 INFO  [org.jboss.threads] (CLI command executor) JBoss Threads version 2.4.0.Final
+2026-01-19 22:19:31,098 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) starting
+2026-01-19 22:19:31,099 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	file.encoding = Cp1252
+	file.separator = \
+	java.class.path = C:\wildfly\jboss-modules.jar
+	java.class.version = 61.0
+	java.home = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot
+	java.io.tmpdir = C:\Users\georg\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\PowerShell\7;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;$env:USERPROFILE\.bun\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\HP\HP One Agent;C:\Program Files\PowerShell\7\;C:\Users\georg\.local\bin;C:\Users\georg\.bun\bin;$env:USERPROFILE\.bun\bin;C:\Users\georg\Desktop\WFF_Universe\WWF_upload\.venv\Scripts;C:\Program Files\PowerShell\7;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Python312\Scripts\;C:\Python312\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\HP\HP One Agent;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\nodejs\;C:\Strawberry\c\bin;C:\Strawberry;C:\Users\georg\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\georg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\georg\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\tectonic;C:\Program Files\GitHub CLI;C:\stripe;C:\Program Files\Apache\maven\bin;;.
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.17+10
+	java.specification.maintenance.version = 1
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Eclipse Adoptium
+	java.vendor.url = https://adoptium.net/
+	java.vendor.url.bug = https://github.com/adoptium/adoptium-support/issues
+	java.vendor.version = Temurin-17.0.17+10
+	java.version = 17.0.17
+	java.version.date = 2025-10-21
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Eclipse Adoptium
+	java.vm.version = 17.0.17+10
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = C:\wildfly
+	jboss.host.name = monkeytoaster
+	jboss.modules.dir = C:\wildfly\modules
+	jboss.node.name = monkeytoaster
+	jboss.qualified.host.name = monkeytoaster
+	jboss.server.base.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	jboss.server.config.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration
+	jboss.server.content.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.data.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data
+	jboss.server.deploy.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.log.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log
+	jboss.server.name = monkeytoaster
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties
+	module.path = C:\wildfly\modules
+	native.encoding = Cp1252
+	org.jboss.boot.log.file = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log\server.log
+	org.jboss.resolver.warning = true
+	org.wildfly.logging.embedded = false
+	os.arch = amd64
+	os.name = Windows 11
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly\jboss-modules.jar -mp C:\wildfly\modules org.jboss.as.cli --file=C:\Users\georg\AppData\Local\Temp\cargo-wildfly-6880291077517367062.cli
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = GB
+	user.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	user.home = C:\Users\georg
+	user.language = en
+	user.name = georg
+	user.script = 
+	user.timezone = Europe/Athens
+	user.variant = 
+2026-01-19 22:19:31,102 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se -Dorg.jboss.boot.log.file=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log -Dlogging.configuration=file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties -Djboss.home.dir=C:\wildfly -Djboss.server.base.dir=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x -Djboss.bind.address=0.0.0.0 
+2026-01-19 22:19:31,878 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 22:19:32,189 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 4) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:19:32,190 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 4) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:19:32,621 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'cluster' in the resource at address '/subsystem=ejb3/service=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2026-01-19 22:19:32,815 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-5) WFLYELY00023: KeyStore file 'C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore' does not exist. Used blank.
+2026-01-19 22:19:32,824 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-5) WFLYELY01084: KeyStore C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2026-01-19 22:19:32,854 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2026-01-19 22:19:33,104 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2026-01-19 22:19:33,107 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) started in 2161ms - Started 50 of 73 services (24 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
+2026-01-19 22:19:33,301 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:19:33,320 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:19:33,344 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:19:33,362 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:19:33,380 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:19:33,401 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:19:33,418 INFO  [org.jboss.as.cli.CommandContext] (main) {"outcome" => "success"}
+2026-01-19 22:19:33,433 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) stopped in 13ms
+2026-01-19 22:19:33,438 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:19:33,851 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:19:34,196 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2026-01-19 22:19:34,202 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2026-01-19 22:19:34,268 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) starting
+2026-01-19 22:19:34,269 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	[Standalone] = 
+	file.encoding = Cp1252
+	file.separator = \
+	java.class.path = C:\wildfly\jboss-modules.jar
+	java.class.version = 61.0
+	java.home = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot
+	java.io.tmpdir = C:\Users\georg\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Program Files\PowerShell\7;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;$env:USERPROFILE\.bun\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\HP\HP One Agent;C:\Program Files\PowerShell\7\;C:\Users\georg\.local\bin;C:\Users\georg\.bun\bin;$env:USERPROFILE\.bun\bin;C:\Users\georg\Desktop\WFF_Universe\WWF_upload\.venv\Scripts;C:\Program Files\PowerShell\7;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Python312\Scripts\;C:\Python312\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\HP\HP One Agent;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\nodejs\;C:\Strawberry\c\bin;C:\Strawberry;C:\Users\georg\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\georg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\georg\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\tectonic;C:\Program Files\GitHub CLI;C:\stripe;C:\Program Files\Apache\maven\bin;;.
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.17+10
+	java.specification.maintenance.version = 1
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Eclipse Adoptium
+	java.vendor.url = https://adoptium.net/
+	java.vendor.url.bug = https://github.com/adoptium/adoptium-support/issues
+	java.vendor.version = Temurin-17.0.17+10
+	java.version = 17.0.17
+	java.version.date = 2025-10-21
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Eclipse Adoptium
+	java.vm.version = 17.0.17+10
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = C:\wildfly
+	jboss.host.name = monkeytoaster
+	jboss.modules.dir = C:\wildfly\modules
+	jboss.node.name = monkeytoaster
+	jboss.qualified.host.name = monkeytoaster
+	jboss.server.base.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	jboss.server.config.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration
+	jboss.server.data.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data
+	jboss.server.deploy.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content
+	jboss.server.log.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\log
+	jboss.server.name = monkeytoaster
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties
+	module.path = C:\wildfly\modules
+	native.encoding = Cp1252
+	org.jboss.boot.log.file = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 11
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly\jboss-modules.jar -mp C:\wildfly\modules org.jboss.as.standalone --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = GB
+	user.dir = C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+	user.home = C:\Users\georg
+	user.language = en
+	user.name = georg
+	user.script = 
+	user.timezone = Europe/Athens
+	user.variant = 
+2026-01-19 22:19:34,271 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -Xms128m -Xmx512m --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se -D[Standalone] -Dorg.jboss.boot.log.file=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x/log/boot.log -Dlogging.configuration=file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/configuration/logging.properties -Djboss.home.dir=C:\wildfly -Djboss.server.base.dir=C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x -Djboss.bind.address=0.0.0.0 
+2026-01-19 22:19:34,907 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 22:19:35,128 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 9) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:19:35,129 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 9) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2026-01-19 22:19:35,498 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 26) WFLYCTL0028: Attribute 'cluster' in the resource at address '/subsystem=ejb3/service=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2026-01-19 22:19:35,672 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 5) WFLYDR0001: Content added at location C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\data\content\c6\097f3659e1e194be2fe1133a2ad3647c7c21d8\content
+2026-01-19 22:19:35,705 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2026-01-19 22:19:35,716 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.8.8.Final
+2026-01-19 22:19:35,722 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.8.8.Final
+2026-01-19 22:19:35,757 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 58) WFLYRS0016: RESTEasy version 6.2.1.Final
+2026-01-19 22:19:35,759 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 54) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2026-01-19 22:19:35,773 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 55) WFLYHEALTH0001: Activating Base Health Subsystem
+2026-01-19 22:19:35,775 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) WFLYCLINF0001: Activating Infinispan subsystem.
+2026-01-19 22:19:35,777 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 76) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2026-01-19 22:19:35,777 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 67) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2026-01-19 22:19:35,781 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 66) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2026-01-19 22:19:35,794 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 63) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2026-01-19 22:19:35,812 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 68) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2026-01-19 22:19:35,819 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 65) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2026-01-19 22:19:35,846 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 69) WFLYNAM0001: Activating Naming Subsystem
+2026-01-19 22:19:35,878 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 78) WFLYWS0002: Activating WebServices Extension
+2026-01-19 22:19:35,879 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 57) WFLYIO001: Worker 'default' has auto-configured to 40 IO threads with 320 max task threads based on your 20 available processors
+2026-01-19 22:19:35,929 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "chatbot-ui.war" (runtime-name: "chatbot-ui.war")
+2026-01-19 22:19:35,949 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 45) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.1)
+2026-01-19 22:19:35,950 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 2.3.0.Final starting
+2026-01-19 22:19:35,953 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.9.Final)
+2026-01-19 22:19:36,034 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2026-01-19 22:19:36,035 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+2026-01-19 22:19:36,044 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2026-01-19 22:19:36,072 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-6) WFLYELY00023: KeyStore file 'C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore' does not exist. Used blank.
+2026-01-19 22:19:36,089 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.26.Final
+2026-01-19 22:19:36,118 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 77) WFLYUT0014: Creating file handler for path 'C:\wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2026-01-19 22:19:36,121 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-6) WFLYELY01084: KeyStore C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\configuration\application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2026-01-19 22:19:36,276 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 320 (per class), which is derived from thread worker pool sizing.
+2026-01-19 22:19:36,276 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 80 (per class), which is derived from the number of CPUs on this host.
+2026-01-19 22:19:36,284 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
+2026-01-19 22:19:36,286 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) Queuing requests.
+2026-01-19 22:19:36,290 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2026-01-19 22:19:36,410 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on [0:0:0:0:0:0:0:0]:8080
+2026-01-19 22:19:36,498 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on [0:0:0:0:0:0:0:0]:8443
+2026-01-19 22:19:37,148 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2026-01-19 22:19:37,716 INFO  [org.xnio] (CLI command executor) XNIO version 3.8.8.Final
+2026-01-19 22:19:37,724 INFO  [org.xnio.nio] (CLI command executor) XNIO NIO Implementation Version 3.8.8.Final
+2026-01-19 22:19:37,811 INFO  [org.jboss.remoting] (CLI command executor) JBoss Remoting version 5.0.26.Final
+2026-01-19 22:19:37,819 INFO  [org.jboss.threads] (CLI command executor) JBoss Threads version 2.4.0.Final
+2026-01-19 22:19:37,853 INFO  [org.wildfly.security] (CLI command executor) ELY00001: WildFly Elytron version 2.0.0.Final
+2026-01-19 22:21:32,879 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x\deployments
+2026-01-19 22:21:33,111 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 6.1.0.Final (Apache CXF 3.5.2.jbossorg-3) 
+2026-01-19 22:21:33,132 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2026-01-19 22:21:33,348 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2026-01-19 22:21:35,936 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment chatbot-ui.war
+2026-01-19 22:21:36,101 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-7) HV000001: Hibernate Validator 8.0.0.Final
+2026-01-19 22:21:36,381 WARN  [org.wildfly.extension.microprofile.opentracing] (MSC service thread 1-7) WFLYTRACEXT0012: No Jaeger endpoint or sender-binding configured. Installing a no-op sender
+2026-01-19 22:21:36,389 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-7) No shutdown hook registered: Please call close() manually on application shutdown.
+2026-01-19 22:21:36,392 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-7) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=chatbot-ui.war, reporter=RemoteReporter(sender=NoopSender(), closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=MonkeyToaster, jaeger.version=Java-1.6.0, ip=192.168.1.12}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2026-01-19 22:21:36,629 INFO  [org.jboss.weld.Version] (MSC service thread 1-5) WELD-000900: 5.1.0 (Final)
+2026-01-19 22:21:37,464 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 95) Initializing Mojarra 4.0.0.SP01 for context '/chatbot-ui'
+2026-01-19 22:21:38,641 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 95) Monitoring file:/C:/Users/georg/Desktop/Interviews/Hexabiblos/target/cargo/configurations/wildfly27x/tmp/vfs/temp/temp98e8cbdea77f19fe/content-8ddcc4d4bc8ee000/WEB-INF/faces-config.xml for modifications
+2026-01-19 22:21:38,782 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 95) Running on PrimeFaces 13.0.0
+2026-01-19 22:21:38,843 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 95) WFLYUT0021: Registered web context: '/chatbot-ui' for server 'default-server'
+2026-01-19 22:21:38,898 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 46) WFLYSRV0010: Deployed "chatbot-ui.war" (runtime-name : "chatbot-ui.war")
+2026-01-19 22:21:38,957 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2026-01-19 22:21:38,963 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 27.0.0.Final (WildFly Core 19.0.0.Final) started in 9082ms - Started 463 of 713 services (361 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
+2026-01-19 22:21:38,966 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2026-01-19 22:21:38,966 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2026-01-19 22:21:39,773 INFO  [stdout] (default task-1) DEBUG: Found project root: C:\Users\georg\Desktop\Interviews\Hexabiblos
+2026-01-19 22:21:39,791 INFO  [stdout] (default task-1) ? Loaded .env file from: C:\Users\georg\Desktop\Interviews\Hexabiblos\.env
+2026-01-19 22:21:39,791 INFO  [stdout] (default task-1) DEBUG: Found GEMINI_API_KEY in environment variable
+2026-01-19 22:21:39,791 INFO  [stdout] (default task-1) DEBUG: .env file loaded. GEMINI_API_KEY from .env: FOUND (length: 39)
+2026-01-19 22:21:39,791 INFO  [stdout] (default task-1) DEBUG: Final API key: FOUND (length: 39)
+2026-01-19 22:21:39,791 INFO  [stdout] (default task-1) DEBUG: Current working directory: C:\Users\georg\Desktop\Interviews\Hexabiblos\target\cargo\configurations\wildfly27x
+2026-01-19 22:21:39,792 INFO  [stdout] (default task-1) Gemini API key found. Initializing client...
+2026-01-19 22:21:39,792 INFO  [stdout] (default task-1) Model: gemini-3-flash-preview
+2026-01-19 22:21:39,793 INFO  [stdout] (default task-1) Max turns: 20
+2026-01-19 22:21:40,220 INFO  [stdout] (default task-1) ? Gemini client initialized successfully with API key
+2026-01-19 22:21:40,221 INFO  [org.primefaces.util.AjaxRequestBuilder] (default task-1) Component 'j_idt24' should be inside a form or should reference a form via its form attribute. We will try to find a fallback form on the client side.
+2026-01-19 22:21:40,225 INFO  [org.primefaces.util.AjaxRequestBuilder] (default task-1) Component 'j_idt25' should be inside a form or should reference a form via its form attribute. We will try to find a fallback form on the client side.
+2026-01-19 22:21:40,225 INFO  [org.primefaces.util.AjaxRequestBuilder] (default task-1) Component 'j_idt26' should be inside a form or should reference a form via its form attribute. We will try to find a fallback form on the client side.
+2026-01-19 22:22:01,651 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final

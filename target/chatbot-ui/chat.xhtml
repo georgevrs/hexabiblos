@@ -3,7 +3,8 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:p="http://primefaces.org/ui"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
     <f:view>
         <h:head>
             <title>Enterprise Chatbot - Hexabiblos</title>
@@ -15,61 +16,96 @@
                 <p:panel header="Enterprise Chat Assistant" styleClass="chat-header-panel">
                     <div class="chat-wrapper">
                         <!-- Conversation Area -->
-                        <div id="chatMessages" class="chat-messages" role="log" aria-live="polite">
-                            <div class="welcome-message">
-                                <div class="bot-message">
-                                    <div class="message-content">
-                                        <p>Welcome! I'm your enterprise assistant. How can I help you today?</p>
+                        <h:panelGroup id="chatScrollPanel" layout="block" styleClass="chat-messages-scroll">
+                            <div id="chatMessages" class="chat-messages" role="log" aria-live="polite">
+                                <ui:repeat value="#{chatState.messages}" var="message">
+                                    <div class="message #{message.user ? 'user-message' : 'bot-message'}">
+                                        <div class="message-content">
+                                            <p><h:outputText value="#{message.text}" escape="true"/></p>
+                                        </div>
+                                        <div class="message-timestamp">
+                                            <h:outputText value="#{message.formattedTimestamp}"/>
+                                        </div>
                                     </div>
-                                    <div class="message-timestamp">Just now</div>
-                                </div>
+                                </ui:repeat>
+                                
+                                <!-- Typing Indicator -->
+                                <p:outputPanel rendered="#{chatState.loading}">
+                                    <div class="typing-indicator">
+                                        <div class="bot-message">
+                                            <div class="message-content">
+                                                <span class="typing-dots">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </p:outputPanel>
                             </div>
-                        </div>
+                        </h:panelGroup>
 
-                        <!-- Typing Indicator -->
-                        <div id="typingIndicator" class="typing-indicator" style="display: none;">
-                            <div class="bot-message">
-                                <div class="message-content">
-                                    <span class="typing-dots">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </span>
-                                </div>
+                        <!-- Demo Mode Indicator -->
+                        <p:outputPanel rendered="#{chatState.demoMode}" styleClass="demo-mode-indicator">
+                            <div style="padding: 8px 20px; background-color: #fff3cd; border-top: 1px solid #ffc107; color: #856404; font-size: 12px;">
+                                <i class="pi pi-info-circle"></i> Demo Mode: Gemini API key not configured
                             </div>
-                        </div>
+                        </p:outputPanel>
 
                         <!-- Input Area -->
                         <div class="chat-input-area">
                             <div class="quick-replies">
                                 <p:commandButton value="Help" 
                                                 styleClass="quick-reply-btn"
-                                                onclick="sendQuickReply('Help'); return false;"/>
+                                                action="#{chatState.quickReply('Help')}"
+                                                update="chatScrollPanel chatForm:messageInput"
+                                                oncomplete="scrollToBottom();"/>
                                 <p:commandButton value="Show Features" 
                                                 styleClass="quick-reply-btn"
-                                                onclick="sendQuickReply('Show Features'); return false;"/>
+                                                action="#{chatState.quickReply('Show Features')}"
+                                                update="chatScrollPanel chatForm:messageInput"
+                                                oncomplete="scrollToBottom();"/>
                                 <p:commandButton value="Reset" 
                                                 styleClass="quick-reply-btn"
-                                                onclick="clearChat(); return false;"/>
+                                                action="#{chatState.clear()}"
+                                                update="chatScrollPanel"
+                                                oncomplete="scrollToBottom();"/>
                             </div>
-                            <div class="input-wrapper">
-                                <p:inputTextarea id="messageInput" 
-                                                value="" 
-                                                placeholder="Type your message here... (Shift+Enter for new line)"
-                                                rows="3"
-                                                styleClass="message-textarea"
-                                                onkeydown="handleKeyDown(event);"/>
-                                <p:commandButton value="Send" 
-                                                icon="pi pi-send"
-                                                styleClass="send-button"
-                                                onclick="sendMessage(); return false;"/>
-                            </div>
+                            <h:form id="chatForm">
+                                <div class="input-wrapper">
+                                    <p:inputTextarea id="messageInput" 
+                                                    value="#{chatState.inputText}" 
+                                                    placeholder="Type your message here... (Shift+Enter for new line)"
+                                                    rows="3"
+                                                    styleClass="message-textarea"
+                                                    disabled="#{chatState.loading}"
+                                                    onkeydown="if(event.key === 'Enter' &amp;&amp; !event.shiftKey) { event.preventDefault(); jQuery('#chatForm\\:sendButton').click(); return false; }"/>
+                                    <p:commandButton id="sendButton"
+                                                    value="Send" 
+                                                    icon="pi pi-send"
+                                                    styleClass="send-button"
+                                                    action="#{chatState.send()}"
+                                                    update="chatScrollPanel chatForm:messageInput"
+                                                    disabled="#{chatState.loading}"
+                                                    oncomplete="scrollToBottom(); return false;"/>
+                                </div>
+                            </h:form>
                         </div>
                     </div>
                 </p:panel>
             </div>
 
-            <h:outputScript name="js/chat.js" target="body"/>
+            <script type="text/javascript">
+                function scrollToBottom() {
+                    setTimeout(function() {
+                        var scrollPanel = document.querySelector('.chat-messages-scroll');
+                        if (scrollPanel) {
+                            scrollPanel.scrollTop = scrollPanel.scrollHeight;
+                        }
+                    }, 100);
+                }
+            </script>
         </h:body>
     </f:view>
 </html>
